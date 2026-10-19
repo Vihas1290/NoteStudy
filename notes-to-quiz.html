@@ -1,0 +1,1468 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NoteStudy</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  bg:'rgb(var(--bg) / <alpha-value>)', surface:'rgb(var(--surface) / <alpha-value>)', surface2:'rgb(var(--surface2) / <alpha-value>)', edge:'rgb(var(--edge) / <alpha-value>)',
+  ink:'#E7ECF6', muted:'#8993AB', accent:'rgb(var(--accent) / <alpha-value>)', violet:'#C084FC',
+  good:'#4ADE80', bad:'#FB7185'
+}, fontFamily: { display:['"Space Grotesk"','sans-serif'], body:['Inter','sans-serif'] } } } }
+</script>
+<style>
+  :root{ padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+  html,body{ height:100%; }
+  :root{ --bg:10 14 23; --surface:19 26 41; --surface2:27 36 54; --edge:35 45 66; --accent:94 234 212; }
+  body{ background-color:rgb(var(--bg)); background-image:radial-gradient(circle at 15% -10%, rgb(var(--accent) / .09), transparent 40%), radial-gradient(circle at 100% 0%, rgb(var(--accent) / .05), transparent 35%); background-attachment:fixed; transition:background-color .4s ease; }
+  .pop{ animation:pop .5s cubic-bezier(.2,1.4,.4,1) both; }
+  @keyframes pop{ from{opacity:0; transform:scale(.8)} to{opacity:1; transform:scale(1)} }
+  .sparkle{ animation:tw 1.6s ease-in-out infinite; }
+  @keyframes tw{ 50%{opacity:.25} }
+  .fadein{ animation:fadein .5s ease both; }
+  @keyframes fadein{ from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:translateY(0)} }
+  .qcard{ animation:qin .35s ease both; }
+  @keyframes qin{ from{opacity:0; transform:translateX(14px)} to{opacity:1; transform:translateX(0)} }
+  .ring{ transition: stroke-dashoffset 1s cubic-bezier(.4,0,.2,1); }
+  ::selection{ background:rgb(var(--accent) / .25); }
+  /* logo */
+  .logo{ position:relative; display:inline-block; line-height:0; }
+  .logo img{ position:relative; height:100%; width:auto; display:block; user-select:none; -webkit-user-drag:none; }
+  .bulb-glow{ position:absolute; left:60%; top:34%; width:78%; aspect-ratio:1; transform:translate(-50%,-50%); border-radius:50%; background:radial-gradient(circle, rgba(250,204,21,.6) 0%, rgba(250,204,21,.22) 38%, transparent 68%); animation:bulb 3.2s ease-in-out infinite; pointer-events:none; }
+  @keyframes bulb{ 0%,100%{ opacity:.45; transform:translate(-50%,-50%) scale(.9); } 50%{ opacity:1; transform:translate(-50%,-50%) scale(1.12); } }
+  /* landing */
+  .landing-bg{ position:fixed; inset:0; z-index:-1; pointer-events:none; overflow:hidden; }
+  .landing-bg::before{ content:''; position:absolute; inset:0; background-image:linear-gradient(rgb(var(--accent) / .07) 1px, transparent 1px), linear-gradient(90deg, rgb(var(--accent) / .07) 1px, transparent 1px); background-size:44px 44px; -webkit-mask-image:radial-gradient(ellipse 75% 55% at 50% 28%, #000 15%, transparent 75%); mask-image:radial-gradient(ellipse 75% 55% at 50% 28%, #000 15%, transparent 75%); }
+  .orb{ position:absolute; border-radius:50%; filter:blur(80px); opacity:.28; background:rgb(var(--accent)); animation:drift 14s ease-in-out infinite alternate; }
+  @keyframes drift{ to{ transform:translate(46px,-34px) scale(1.15); } }
+  .grad{ display:inline-block; padding-bottom:.1em; background:linear-gradient(95deg, rgb(var(--accent)) 10%, #E7ECF6 95%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .cta{ box-shadow:0 0 0 1px rgb(var(--accent) / .45), 0 12px 44px -12px rgb(var(--accent) / .7); transition:transform .18s ease, box-shadow .18s ease; }
+  .cta:hover{ transform:translateY(-2px); box-shadow:0 0 0 1px rgb(var(--accent) / .7), 0 18px 54px -12px rgb(var(--accent) / .85); }
+  .cta:active{ transform:scale(.98); }
+  .num{ color:transparent; -webkit-text-stroke:1px rgb(var(--accent) / .75); }
+  /* in-view animations: JS adds .in when the element scrolls into range */
+  [data-anim]{ opacity:0; transition:opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1), filter .8s ease; transition-delay:calc(var(--i,0) * 90ms); }
+  [data-anim="up"]{ transform:translateY(26px); }
+  [data-anim="left"]{ transform:translateX(-30px); }
+  [data-anim="right"]{ transform:translateX(30px); }
+  [data-anim="scale"]{ transform:scale(.93); }
+  [data-anim="blur"]{ transform:translateY(16px); filter:blur(9px); }
+  [data-anim].in{ opacity:1; transform:none; filter:none; }
+  .draw{ position:relative; }
+  .draw::before{ content:''; position:absolute; left:0; top:-1px; height:1px; width:100%; background:linear-gradient(90deg, rgb(var(--accent)), rgb(var(--accent) / 0)); transform:scaleX(0); transform-origin:left; transition:transform 1.1s cubic-bezier(.2,.8,.2,1); transition-delay:calc(var(--i,0) * 90ms + .25s); }
+  .draw.in::before{ transform:scaleX(1); }
+  .glow-in{ opacity:0; transition:opacity 1.4s ease .3s; }
+  .in .glow-in{ opacity:1; }
+  .pulse-ring{ position:absolute; width:280px; height:280px; border-radius:50%; border:1px solid rgb(var(--accent) / .5); animation:pring 4.8s ease-out infinite; }
+  @keyframes pring{ from{ transform:scale(.55); opacity:.55; } to{ transform:scale(1.55); opacity:0; } }
+  #demo .layer{ transition:opacity .6s ease, transform .6s cubic-bezier(.2,.8,.2,1), filter .6s ease; }
+  #demo[data-stage="2"] .demo-note, #demo[data-stage="3"] .demo-note{ opacity:0; transform:translateY(-18px) scale(.96); filter:blur(5px); }
+  #demo .demo-quiz{ opacity:0; transform:translateY(22px) scale(.96); }
+  #demo[data-stage="2"] .demo-quiz, #demo[data-stage="3"] .demo-quiz{ opacity:1; transform:none; }
+  #demo .hl{ color:rgb(var(--accent)); background:linear-gradient(transparent 62%, rgb(var(--accent) / .4) 0); border-radius:2px; }
+  #demo[data-stage="1"] .hl{ animation:hlpulse 1.1s ease-in-out; }
+  @keyframes hlpulse{ 50%{ background:linear-gradient(transparent 0, rgb(var(--accent) / .45) 0); } }
+  #demo .demo-opt{ transition:border-color .35s, background-color .35s, opacity .35s; }
+  #demo[data-stage="3"] .demo-opt.right{ border-color:#4ADE80; background:rgb(74 222 128 / .12); }
+  #demo[data-stage="3"] .demo-opt:not(.right){ opacity:.4; }
+  #demo .tick{ opacity:0; transition:opacity .3s .2s; }
+  #demo[data-stage="3"] .tick{ opacity:1; color:#4ADE80; }
+  #demo .pts{ opacity:0; transform:translateY(8px) scale(.8); transition:opacity .4s, transform .5s cubic-bezier(.2,1.4,.4,1); }
+  #demo[data-stage="3"] .pts{ opacity:1; transform:none; }
+  .caret{ display:inline-block; width:2px; height:1em; background:rgb(var(--accent)); margin-left:2px; vertical-align:-2px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important;} [data-anim]{ opacity:1 !important; transform:none !important; filter:none !important; } .draw::before{ transform:scaleX(1); } .glow-in{ opacity:1; } }
+</style>
+</head>
+<body class="bg-bg text-ink font-body min-h-screen">
+<div id="app" class="max-w-2xl mx-auto px-5 pb-16"></div>
+
+<script>
+/* ---------- brand ---------- */
+const LOGO_SRC = 'data:image/png;base64,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';
+const logoMark = (heightClass, glow = true) => `<span class="logo ${heightClass}">${glow ? '<span class="bulb-glow" aria-hidden="true"></span>' : ''}<img src="${LOGO_SRC}" alt="NoteStudy logo" draggable="false"></span>`;
+
+/* ---------- storage ---------- */
+const DB = {
+  get(k, d){ try{ return JSON.parse(localStorage.getItem(k)) ?? d }catch{ return d } },
+  set(k, v){ localStorage.setItem(k, JSON.stringify(v)) }
+};
+let notes = DB.get('ntq_notes', []);
+let quizzes = DB.get('ntq_quizzes', []);
+let attempts = DB.get('ntq_attempts', []);
+const defaultProfile = () => ({ account:null, savedAt:0, points:0, lifetime:0, owned:['theme_default','color_default'], equipped:{ theme:'theme_default', color:'color_default', costume:null } });
+const savedProfile = DB.get('ntq_profile', {});
+let profile = { ...defaultProfile(), ...savedProfile };
+profile.equipped = { ...defaultProfile().equipped, ...profile.equipped };
+const save = () => { profile.savedAt = Date.now(); DB.set('ntq_notes', notes); DB.set('ntq_quizzes', quizzes); DB.set('ntq_attempts', attempts); DB.set('ntq_profile', profile); };
+const uid = () => Math.random().toString(36).slice(2, 10);
+
+/* ---------- notes parsing ---------- */
+const HEADING_RE = /^(#{1,6}\s+.+|[A-Z][A-Za-z0-9 ,'&/-]{2,60}:?$)/;
+function splitSections(text){
+  const lines = text.split('\n'); let sections = []; let heading = 'Full notes'; let body = [];
+  const flush = () => { const t = body.join('\n').trim(); if(t) sections.push({heading, text:t}); };
+  for(const raw of lines){
+    const line = raw.trim();
+    if(!line){ body.push(''); continue; }
+    if(HEADING_RE.test(line) && line.length < 80){ flush(); heading = line.replace(/^#+\s*/, '').replace(/:$/, ''); body = []; }
+    else body.push(line);
+  }
+  flush();
+  return sections.length ? sections : [{heading:'Full notes', text: text.trim()}];
+}
+
+/* ---------- document parsing (pdf / docx / pptx) ---------- */
+async function extractPdfText(buf){
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+  const pdf = await pdfjsLib.getDocument({ data: buf }).promise;
+  let text = '';
+  for(let i = 1; i <= pdf.numPages; i++){
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    text += content.items.map(it => it.str).join(' ') + '\n\n';
+  }
+  return text;
+}
+async function extractDocxText(buf){
+  const result = await mammoth.extractRawText({ arrayBuffer: buf });
+  return result.value;
+}
+async function extractPptxText(buf){
+  const zip = await JSZip.loadAsync(buf);
+  const slideFiles = Object.keys(zip.files)
+    .filter(f => /^ppt\/slides\/slide\d+\.xml$/.test(f))
+    .sort((a, b) => parseInt(a.match(/slide(\d+)/)[1]) - parseInt(b.match(/slide(\d+)/)[1]));
+  const slides = [];
+  for(const f of slideFiles){
+    const xml = await zip.files[f].async('string');
+    const doc = new DOMParser().parseFromString(xml, 'application/xml');
+    const texts = [...doc.getElementsByTagName('a:t')].map(n => n.textContent).join(' ').trim();
+    const num = f.match(/slide(\d+)/)[1];
+    if(texts) slides.push(`Slide ${num}\n${texts}`);
+  }
+  return slides.join('\n\n');
+}
+async function extractFileText(file){
+  const ext = file.name.split('.').pop().toLowerCase();
+  if(ext === 'txt') return await file.text();
+  if(ext === 'pdf') return await extractPdfText(await file.arrayBuffer());
+  if(ext === 'docx') return await extractDocxText(await file.arrayBuffer());
+  if(ext === 'pptx') return await extractPptxText(await file.arrayBuffer());
+  throw new Error('unsupported');
+}
+
+/* ---------- offline question generator ---------- */
+const STOP = new Set(['the','and','for','that','with','this','from','have','are','was','were','which','their','into','also','such','when','where','while','than','then','these','those','over','under','each','some','will','can','may','not','but','its','his','her','you','your','our','who','whom','how','what','why']);
+function sentences(text){
+  const clean = text.replace(/\s+/g,' ').trim();
+  return clean.split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(s=>s.length>=35 && s.length<=220);
+}
+function keyTerm(s){
+  const nums = s.match(/\b\d[\d,.]*%?\b/g);
+  if(nums) return nums.sort((a,b)=>b.length-a.length)[0];
+  const caps = (s.match(/\b[A-Z][a-zA-Z]{2,}(?:\s[A-Z][a-zA-Z]{2,})*\b/g)||[]).filter(c=>!STOP.has(c.toLowerCase()));
+  if(caps.length) return caps.sort((a,b)=>b.length-a.length)[0];
+  const words = (s.match(/[A-Za-z][A-Za-z\-']+/g)||[]).filter(w=>!STOP.has(w.toLowerCase()) && w.length>5);
+  if(words.length) return words.sort((a,b)=>b.length-a.length)[0];
+  return null;
+}
+function shuffle(a){ a=[...a]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function generateQuestions(text, difficulty, count, types){
+  let sents = sentences(text);
+  sents = difficulty==='easy' ? sents.sort((a,b)=>a.length-b.length)
+        : difficulty==='hard' ? sents.sort((a,b)=>b.length-a.length)
+        : shuffle(sents);
+  const allTerms = sents.map(keyTerm).filter(Boolean);
+  const cycle = types.length ? types : ['mcq'];
+  const qs = []; let i = 0;
+  for(const s of sents){
+    if(qs.length >= count) break;
+    const term = keyTerm(s); if(!term) continue;
+    const type = cycle[i % cycle.length]; i++;
+    if(type === 'mcq'){
+      const pool = shuffle(allTerms.filter(t=>t.toLowerCase()!==term.toLowerCase()));
+      const n = difficulty==='easy' ? 2 : 3;
+      const options = shuffle([...pool.slice(0,n), term]);
+      qs.push({id:uid(), type, prompt:`Fill in the blank: ${s.replace(term,'_____')}`, options, answer:term, source:s});
+    } else if(type === 'true_false'){
+      const makeFalse = Math.random() < 0.5 && allTerms.length > 1;
+      let statement = s, isTrue = true;
+      if(makeFalse){ const other = shuffle(allTerms.filter(t=>t!==term))[0] || term; statement = s.replace(term, other); isTrue = false; }
+      qs.push({id:uid(), type, prompt:`True or false: ${statement}`, options:['True','False'], answer: isTrue?'True':'False', source:s});
+    } else {
+      qs.push({id:uid(), type:'short_answer', prompt:`According to your notes, what completes: "${s.replace(term,'_____')}"?`, options:[], answer:term, source:s});
+    }
+  }
+  return qs.slice(0, count);
+}
+function normalize(s){ return (s||'').toLowerCase().replace(/[^a-z0-9 ]/g,'').trim(); }
+function isCorrect(type, given, answer){
+  const g = normalize(given), c = normalize(answer);
+  if(!g) return false;
+  if(type !== 'short_answer') return g === c;
+  if(g===c || g.includes(c) || c.includes(g)) return true;
+  const gw = new Set(g.split(' ')), cw = new Set(c.split(' '));
+  if(!cw.size) return false;
+  let overlap = 0; cw.forEach(w=>{ if(gw.has(w)) overlap++; });
+  return overlap / cw.size >= 0.6;
+}
+
+/* ---------- points, avatar & shop ---------- */
+const PTS_PER_CORRECT = 15;
+const TIERS = {
+  starter:   { name:'Starter',   price:0,    color:'#94A3B8' },
+  common:    { name:'Common',    price:180,  color:'#9CA3AF' },
+  uncommon:  { name:'Uncommon',  price:360,  color:'#4ADE80' },
+  rare:      { name:'Rare',      price:720,  color:'#60A5FA' },
+  mythic:    { name:'Mythic',    price:1000, color:'#E879F9' },
+  legendary: { name:'Legendary', price:1500, color:'#FACC15' }
+};
+const ITEMS = [
+  { id:'theme_default', cat:'theme', name:'Neon Teal',       tier:'starter',   v:{ bg:'10 14 23', surface:'19 26 41', surface2:'27 36 54', edge:'35 45 66', accent:'94 234 212' } },
+  { id:'theme_ocean',   cat:'theme', name:'Ocean Blue',      tier:'common',    v:{ bg:'8 13 24',  surface:'15 24 42', surface2:'22 34 58', edge:'31 46 75', accent:'96 165 250' } },
+  { id:'theme_sunset',  cat:'theme', name:'Sunset Orange',   tier:'uncommon',  v:{ bg:'18 11 10', surface:'30 19 16', surface2:'42 27 22', edge:'62 40 31', accent:'251 146 60' } },
+  { id:'theme_violet',  cat:'theme', name:'Royal Violet',    tier:'rare',      v:{ bg:'14 10 24', surface:'24 17 41', surface2:'35 25 58', edge:'52 38 84', accent:'192 132 252' } },
+  { id:'theme_crimson', cat:'theme', name:'Crimson Night',   tier:'mythic',    v:{ bg:'20 8 12',  surface:'33 14 20', surface2:'46 20 29', edge:'70 30 42', accent:'251 113 133' } },
+  { id:'theme_gold',    cat:'theme', name:'Golden Aurora',   tier:'legendary', v:{ bg:'16 13 6',  surface:'28 23 10', surface2:'40 33 14', edge:'64 52 22', accent:'250 204 21' } },
+
+  { id:'color_default', cat:'color', name:'Slate',    tier:'starter',   v:{ fill:'#CBD5E1', shade:'#94A3B8' } },
+  { id:'color_sky',     cat:'color', name:'Sky',      tier:'common',    v:{ fill:'#7DD3FC', shade:'#38BDF8' } },
+  { id:'color_lime',    cat:'color', name:'Lime',     tier:'uncommon',  v:{ fill:'#BEF264', shade:'#84CC16' } },
+  { id:'color_magenta', cat:'color', name:'Magenta',  tier:'rare',      v:{ fill:'#F0ABFC', shade:'#D946EF' } },
+  { id:'color_nebula',  cat:'color', name:'Nebula',   tier:'mythic',    v:{ grad:['#818CF8','#F472B6'], shade:'#4F46E5' } },
+  { id:'color_gold',    cat:'color', name:'Pure Gold',tier:'legendary', v:{ grad:['#FDE68A','#F59E0B'], shade:'#D97706', sparkle:true } },
+
+  { id:'cos_cap',        cat:'costume', name:'Red Cap',      tier:'common',    v:{ kind:'cap' } },
+  { id:'cos_phones',     cat:'costume', name:'Headphones',   tier:'uncommon',  v:{ kind:'headphones' } },
+  { id:'cos_wizard',     cat:'costume', name:'Wizard Hat',   tier:'rare',      v:{ kind:'wizard' } },
+  { id:'cos_helmet',     cat:'costume', name:'Space Helmet', tier:'mythic',    v:{ kind:'helmet' } },
+  { id:'cos_royal',      cat:'costume', name:'Royal Crown & Cape', tier:'legendary', v:{ kind:'royal' } }
+];
+const getItem = id => ITEMS.find(i => i.id === id) || null;
+// Older saves have no lifetime total: rebuild it from the bank plus everything ever bought.
+if(typeof savedProfile.lifetime !== 'number'){
+  profile.lifetime = profile.points + profile.owned.reduce((s, id) => { const it = getItem(id); return s + (it ? TIERS[it.tier].price : 0); }, 0);
+  if(savedProfile.points !== undefined) save();
+}
+const SELL_RATE = 0.5;
+const sellValue = it => Math.floor(TIERS[it.tier].price * SELL_RATE);
+const COSTUMES = {
+  cap:        { back:'', front:'<path d="M35 46 Q35 24 60 24 Q85 24 85 46 Z" fill="#EF4444"/><rect x="33" y="44" width="54" height="5" rx="2.5" fill="#B91C1C"/><rect x="78" y="44" width="28" height="5" rx="2.5" fill="#B91C1C"/>' },
+  headphones: { back:'', front:'<path d="M33 56 Q33 22 60 22 Q87 22 87 56" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/><rect x="26" y="48" width="12" height="20" rx="5" fill="#22D3EE"/><rect x="82" y="48" width="12" height="20" rx="5" fill="#22D3EE"/>' },
+  wizard:     { back:'', front:'<path d="M38 38 L60 0 L82 38 Z" fill="#6D28D9"/><ellipse cx="60" cy="38" rx="32" ry="6" fill="#5B21B6"/><circle cx="60" cy="22" r="3" fill="#FDE047"/>' },
+  helmet:     { back:'', front:'<circle cx="60" cy="52" r="34" fill="rgba(125,211,252,.2)" stroke="#E2E8F0" stroke-width="4"/><rect x="34" y="80" width="52" height="8" rx="4" fill="#94A3B8"/><line x1="60" y1="18" x2="60" y2="9" stroke="#E2E8F0" stroke-width="3"/><circle cx="60" cy="7" r="4" fill="#F43F5E"/>' },
+  royal:      { back:'<path d="M22 120 L30 86 L60 98 L90 86 L98 120 Z" fill="#B91C1C"/>', front:'<path d="M38 34 L44 14 L53 27 L60 10 L67 27 L76 14 L82 34 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="2" stroke-linejoin="round"/><circle cx="60" cy="28" r="2.5" fill="#EF4444"/>' }
+};
+let avN = 0;
+function avatarSVG(size, color, kind){
+  const id = 'avg' + (avN++);
+  const fill = color.grad ? `url(#${id})` : color.fill;
+  const defs = color.grad ? `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${color.grad[0]}"/><stop offset="1" stop-color="${color.grad[1]}"/></linearGradient></defs>` : '';
+  const c = COSTUMES[kind] || { back:'', front:'' };
+  const sparkle = color.sparkle ? '<g class="sparkle" fill="#FFF7AE"><path d="M100 30 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M14 68 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>' : '';
+  return `<svg viewBox="0 0 120 120" width="${size}" height="${size}" role="img" aria-label="Avatar">${defs}${c.back}<path d="M20 120 C20 92 40 82 60 82 C80 82 100 92 100 120 Z" fill="${color.shade}"/><circle cx="60" cy="52" r="26" fill="${fill}"/><circle cx="51" cy="50" r="3" fill="#0A0E17"/><circle cx="69" cy="50" r="3" fill="#0A0E17"/><path d="M50 62 Q60 71 70 62" stroke="#0A0E17" stroke-width="3" fill="none" stroke-linecap="round"/>${c.front}${sparkle}</svg>`;
+}
+function myAvatar(size){
+  const color = getItem(profile.equipped.color) || ITEMS.find(i => i.id === 'color_default');
+  const costume = getItem(profile.equipped.costume);
+  return avatarSVG(size, color.v, costume ? costume.v.kind : null);
+}
+function applyTheme(){
+  const t = getItem(profile.equipped.theme) || ITEMS[0];
+  const s = document.documentElement.style;
+  ['bg','surface','surface2','edge','accent'].forEach(k => s.setProperty('--' + k, t.v[k]));
+}
+function topBar(){
+  const chip = (profile.account || profile.lifetime > 0 || profile.points > 0) ? `<button data-nav="shop" aria-label="Open avatar and shop. You have ${profile.points} points" class="flex items-center gap-2 rounded-full border border-edge bg-surface pl-3 pr-1 py-1 hover:border-accent/50 transition-colors">
+        <span class="text-sm font-display font-semibold text-accent">${profile.points} pts</span>
+        <span class="block rounded-full bg-surface2 overflow-hidden">${myAvatar(32)}</span>
+      </button>` : '';
+  const acct = profile.account
+    ? `<button data-nav="account" aria-label="Account: ${escapeAttr(profile.account.nick)}. Log in, sign out or delete" class="grid place-items-center h-10 w-10 rounded-full border border-edge bg-surface hover:border-accent/50 transition-colors"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg></button>`
+    : `<button data-nav="account" class="h-10 rounded-full border border-accent/60 text-accent px-4 text-sm font-semibold hover:bg-accent/10 transition-colors">Log in</button>`;
+  return `<div class="flex items-center justify-between pt-5">
+    <button data-nav="landing" aria-label="NoteStudy home" class="flex items-center gap-2.5 font-display font-semibold tracking-tight text-ink">${logoMark('h-9')}<span class="hidden min-[400px]:inline">NoteStudy</span></button>
+    <div class="flex items-center gap-2">
+      <button data-nav="board" aria-label="Open leaderboard" class="grid place-items-center h-10 w-10 rounded-full border border-edge bg-surface hover:border-accent/50 transition-colors">🏆</button>
+      ${chip}${acct}
+    </div>
+  </div>`;
+}
+function itemCard(it, i){
+  const t = TIERS[it.tier], price = t.price;
+  const owned = profile.owned.includes(it.id);
+  const equipped = profile.equipped[it.cat] === it.id;
+  const color = getItem(profile.equipped.color) || ITEMS.find(i => i.id === 'color_default');
+  const costume = getItem(profile.equipped.costume);
+  let preview = '';
+  if(it.cat === 'theme') preview = `<div class="h-20 rounded-xl p-1.5" style="background:rgb(${it.v.bg});border:1px solid rgb(${it.v.edge})"><div class="h-full rounded-lg p-2 flex flex-col justify-between" style="background:rgb(${it.v.surface})"><div class="h-2 w-10 rounded" style="background:rgb(${it.v.edge})"></div><div class="h-3 w-14 rounded-full" style="background:rgb(${it.v.accent})"></div></div></div>`;
+  else if(it.cat === 'color') preview = `<div class="h-20 flex items-center justify-center">${avatarSVG(76, it.v, costume ? costume.v.kind : null)}</div>`;
+  else preview = `<div class="h-20 flex items-center justify-center">${avatarSVG(76, color.v, it.v.kind)}</div>`;
+  const action = equipped ? `<button disabled class="w-full rounded-lg border border-accent/40 text-accent py-2 text-xs font-semibold">✓ Equipped</button>`
+    : owned ? `<button data-equip="${it.id}" class="w-full rounded-lg border border-edge bg-surface2 hover:border-accent/50 py-2 text-xs font-medium">Equip</button>`
+    : profile.points >= price ? `<button data-buy="${it.id}" class="w-full rounded-lg bg-accent text-bg py-2 text-xs font-semibold hover:scale-[1.02] transition-transform">Buy · ${price} pts</button>`
+    : `<button disabled class="w-full rounded-lg border border-edge text-muted py-2 text-xs opacity-70">${price - profile.points} pts to go</button>`;
+  const canSell = owned && it.tier !== 'starter';
+  const armed = state.sellArm === it.id;
+  const sellBtn = canSell ? `<button data-sell="${it.id}" class="w-full rounded-lg border py-1.5 text-[11px] font-medium transition-colors ${armed ? 'border-bad text-bad bg-bad/10' : 'border-edge text-muted hover:text-bad hover:border-bad/50'}">${armed ? `Tap again to sell for ${sellValue(it)} pts` : `Sell · ${sellValue(it)} pts`}</button>` : '';
+  const glow = (it.tier === 'mythic' || it.tier === 'legendary') ? `;box-shadow:0 0 26px -10px ${t.color}` : '';
+  return `<div data-anim="up" class="rounded-2xl bg-surface p-3 flex flex-col gap-2 border" style="--i:${i % 6};border-color:${t.color}66${glow}">
+    ${preview}
+    <div><p class="text-[10px] uppercase tracking-wider font-semibold" style="color:${t.color}">${t.name}${price ? ` · ${price}` : ''}</p>
+    <p class="text-sm font-medium leading-tight">${escapeHtml(it.name)}</p></div>
+    ${action}${sellBtn}
+  </div>`;
+}
+function viewShop(){
+  const tab = state.shopTab || 'theme';
+  const tabs = [['theme','Themes'],['color','Colors'],['costume','Costumes']];
+  const items = ITEMS.filter(i => i.cat === tab);
+  const hasCostume = !!getItem(profile.equipped.costume);
+  return `
+  <header class="pt-8 pb-4 fadein">
+    <div class="flex items-center gap-5">
+      <div class="rounded-2xl border border-edge bg-surface p-2 shrink-0">${myAvatar(104)}</div>
+      <div>
+        <h1 class="font-display text-2xl font-semibold">Avatar &amp; shop</h1>
+        <p class="text-accent font-display font-semibold text-xl mt-1">${profile.points} pts</p>
+        <p class="text-xs text-muted mt-1">Earn ${PTS_PER_CORRECT} points per correct answer · Lifetime: ${profile.lifetime.toLocaleString()} pts</p>
+        <p class="text-xs text-muted mt-0.5">Sell items you own back for ${Math.round(SELL_RATE * 100)}% of their price.</p>
+        ${hasCostume ? '<button data-unequip class="mt-2 text-xs text-muted hover:text-ink">Remove costume</button>' : ''}
+      </div>
+    </div>
+  </header>
+  ${accountStrip()}
+  <p class="text-sm text-accent min-h-[1.25rem] mb-2" role="status">${escapeHtml(state.shopMsg || '')}</p>
+  <div class="flex gap-2 mb-4" role="tablist">
+    ${tabs.map(([k,l]) => `<button data-tab="${k}" role="tab" aria-selected="${tab===k}" class="flex-1 rounded-xl border px-3 py-2.5 text-sm ${tab===k ? 'border-accent text-accent bg-accent/10' : 'border-edge text-muted'}">${l}</button>`).join('')}
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">${items.map(itemCard).join('')}</div>`;
+}
+
+/* ---------- landing ("the entrée") ---------- */
+const DEMO_SENTENCE = 'Chlorophyll is the green pigment in chloroplasts that absorbs sunlight.';
+let landTimers = [], animObs = null, demoObs = null, rafIds = [], renderedKey = '';
+const prefersReduced = () => !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+// Animations replay only when the screen (or tab / loaded list) really changes, not on every small re-render.
+const animKey = () => state.view
+  + (state.view === 'shop' ? ':' + (state.shopTab || 'theme') : '')
+  + (state.view === 'board' ? ':' + boardState + ':' + (state.boardTab || 'all') : '');
+function stopAnims(){
+  landTimers.forEach(clearTimeout); landTimers = [];
+  rafIds.forEach(cancelAnimationFrame); rafIds = [];
+  if(animObs){ animObs.disconnect(); animObs = null; }
+  if(demoObs){ demoObs.disconnect(); demoObs = null; }
+}
+function countUp(el, instant){
+  const to = parseFloat(el.dataset.count) || 0, dec = +(el.dataset.dec || 0), suf = el.dataset.suffix || '';
+  const fmt = v => v.toFixed(dec) + suf;
+  if(instant){ el.textContent = fmt(to); return; }
+  const t0 = performance.now(), dur = 1300;
+  const step = now => {
+    const k = Math.min(1, (now - t0) / dur);
+    el.textContent = fmt(to * (1 - Math.pow(1 - k, 3)));
+    if(k < 1) rafIds.push(requestAnimationFrame(step));
+  };
+  rafIds.push(requestAnimationFrame(step));
+}
+function setupAnims(fresh){
+  const els = [...root.querySelectorAll('[data-anim],[data-count]')];
+  const instant = !fresh || prefersReduced();
+  const reveal = (el, force) => {
+    if(el.hasAttribute('data-anim')) el.classList.add('in');
+    if(el.hasAttribute('data-count')) countUp(el, instant || force);
+  };
+  if(instant || !('IntersectionObserver' in window)){ els.forEach(el => reveal(el, true)); return; }
+  try{
+    animObs = new IntersectionObserver(entries => entries.forEach(en => {
+      if(en.isIntersecting){ reveal(en.target); animObs.unobserve(en.target); }
+    }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(el => animObs.observe(el));
+  } catch(err){ els.forEach(el => reveal(el, true)); }
+}
+// The hero demo only runs while it is on screen.
+function startDemo(){
+  const demo = $('#demo'), text = $('#demoText');
+  if(!demo || !text) return;
+  const later = (fn, ms) => landTimers.push(setTimeout(fn, ms));
+  const marked = () => `<span class="hl">Chlorophyll</span>${DEMO_SENTENCE.slice(11)}`;
+  if(prefersReduced()){ text.innerHTML = marked(); demo.dataset.stage = '3'; return; }
+  let running = false;
+  const cycle = () => {
+    demo.dataset.stage = '0'; text.textContent = '';
+    let i = 0;
+    (function type(){
+      i++; text.textContent = DEMO_SENTENCE.slice(0, i);
+      if(i < DEMO_SENTENCE.length) return later(type, 32);
+      later(() => { text.innerHTML = marked(); demo.dataset.stage = '1'; }, 250);
+      later(() => { demo.dataset.stage = '2'; }, 1500);
+      later(() => { demo.dataset.stage = '3'; }, 3000);
+      later(cycle, 6400);
+    })();
+  };
+  const play = () => { if(!running){ running = true; cycle(); } };
+  const pause = () => { landTimers.forEach(clearTimeout); landTimers = []; running = false; };
+  if('IntersectionObserver' in window){
+    demoObs = new IntersectionObserver(es => es.forEach(en => en.isIntersecting ? play() : pause()), { threshold: 0.25 });
+    demoObs.observe(demo);
+  } else play();
+}
+function viewLanding(){
+  const returning = quizzes.length > 0 || profile.lifetime > 0;
+  const steps = [
+    ['01', 'Drop in your notes', 'Paste text or upload a PDF, Word or PowerPoint file. Headings become topics you can quiz on their own.'],
+    ['02', 'Pick your challenge', 'Choose the difficulty, the question types and how many. Quiz everything, or just one section.'],
+    ['03', 'Play, score, level up', 'Answer one question at a time, see exactly what you missed, and bank 15 points for every right answer.']
+  ];
+  const feats = [
+    ['Grounded in your notes', 'Every question is built from sentences in your own material. Nothing is invented.'],
+    ['Any format', 'PDF, Word, PowerPoint or plain text, read right in your browser.'],
+    ['Your pace', 'Easy, medium or hard. Multiple choice, true or false, and short answer.'],
+    ['Points that mean something', '15 points per correct answer, banked and ready to spend in the shop.'],
+    ['Make it yours', 'Five tiers of themes, colors and costumes for your avatar. Sell what you outgrow.'],
+    ['Climb the board', 'Compete on all-time points or on what is in your bank right now.']
+  ];
+  return `
+  <div class="landing-bg" aria-hidden="true">
+    <div class="orb" style="width:380px;height:380px;top:-8%;left:2%"></div>
+    <div class="orb" style="width:320px;height:320px;top:36%;right:-6%;background:rgb(192 132 252);opacity:.15;animation-delay:-6s"></div>
+  </div>
+
+  <section class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center pt-10 pb-16 lg:pt-20 lg:pb-28">
+    <div>
+      <p class="fadein inline-flex items-center gap-2 rounded-full border border-edge bg-surface/70 px-3 py-1.5 text-xs text-muted"><span class="h-1.5 w-1.5 rounded-full bg-accent animate-pulse"></span>Active recall, on autopilot</p>
+      <h1 class="fadein font-display font-semibold tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-[1.04] mt-5">Stop rereading.<br><span class="grad">Start recalling.</span></h1>
+      <p class="fadein text-muted text-base sm:text-lg mt-5 max-w-md">Drop in your notes and get a quiz built only from your own material, in seconds. Then earn points, unlock gear and climb the board.</p>
+      <div class="fadein flex flex-wrap items-center gap-3 mt-8">
+        <button data-start class="cta rounded-xl bg-accent text-bg font-semibold px-7 py-4 text-base">Start a quiz →</button>
+        <button data-scroll="how" class="rounded-xl border border-edge bg-surface/70 px-6 py-4 text-base hover:border-accent/50 transition-colors">See how it works</button>
+      </div>
+      <p class="fadein text-xs text-muted mt-5">PDF · DOCX · PPTX · TXT, or just paste</p>
+      ${returning ? `<p class="fadein text-sm text-muted mt-6">Welcome back${profile.account ? ', ' + escapeHtml(profile.account.nick) : ''} · <span class="text-accent font-medium">${profile.points} pts</span> in your bank${quizzes.length ? ` · <button data-nav="history" class="underline hover:text-ink">${quizzes.length} saved quiz${quizzes.length > 1 ? 'zes' : ''}</button>` : ''}</p>` : ''}
+    </div>
+
+    <div class="fadein relative mx-auto w-full max-w-md">
+      <p class="sr-only">Animated example: a sentence from your notes turns into a fill-in-the-blank question, and answering it correctly earns 15 points.</p>
+      <div aria-hidden="true">
+        <div class="absolute inset-0 grid place-items-center pointer-events-none"><span class="pulse-ring"></span><span class="pulse-ring" style="animation-delay:-1.6s"></span><span class="pulse-ring" style="animation-delay:-3.2s"></span></div>
+        <div id="demo" data-stage="0" class="relative h-[360px]">
+          <div class="demo-note layer absolute inset-x-0 top-10 rounded-2xl border border-edge bg-surface/85 backdrop-blur p-5 shadow-xl">
+            <div class="flex items-center justify-between"><span class="text-[11px] uppercase tracking-widest text-muted">Your notes</span><span class="text-[11px] text-muted">Biology.pdf</span></div>
+            <p class="mt-3 text-[15px] leading-relaxed min-h-[4.6rem]"><span id="demoText"></span><i class="caret"></i></p>
+          </div>
+          <div class="demo-quiz layer absolute inset-x-0 top-2 rounded-2xl border border-edge bg-surface/90 backdrop-blur p-5 shadow-xl">
+            <div class="flex items-center justify-between text-[11px] text-muted"><span>Question 1 of 8</span><span class="pts rounded-full border border-accent/40 bg-accent/10 text-accent font-display font-semibold px-2.5 py-1 text-xs">⚡ +15</span></div>
+            <div class="h-1 rounded-full bg-surface2 mt-2 overflow-hidden"><div class="h-full bg-accent" style="width:12%"></div></div>
+            <p class="font-display text-lg leading-snug mt-4">Fill in the blank: <span class="text-accent">_____</span> is the green pigment in chloroplasts that absorbs sunlight.</p>
+            <div class="mt-4 space-y-2">
+              <div class="demo-opt rounded-xl border border-edge bg-surface2 px-4 py-2.5 text-sm flex items-center justify-between"><span>Glucose</span></div>
+              <div class="demo-opt right rounded-xl border border-edge bg-surface2 px-4 py-2.5 text-sm flex items-center justify-between"><span>Chlorophyll</span><span class="tick">✓</span></div>
+              <div class="demo-opt rounded-xl border border-edge bg-surface2 px-4 py-2.5 text-sm flex items-center justify-between"><span>Stomata</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 border-y border-edge py-8">
+      ${[[4, 'file formats'], [3, 'question types'], [3, 'difficulty levels'], [15, 'points per correct answer']].map(([n, l], i) => `
+        <div data-anim="up" style="--i:${i}"><p class="font-display text-4xl font-semibold text-accent"><span data-count="${n}">0</span></p><p class="text-xs text-muted mt-1">${l}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section id="how" class="py-14">
+    <p data-anim="up" class="text-xs uppercase tracking-widest text-accent">How it works</p>
+    <h2 data-anim="blur" style="--i:1" class="font-display text-3xl sm:text-4xl font-semibold mt-3 max-w-lg leading-tight">From notes to a scored quiz in under a minute.</h2>
+    <div class="grid sm:grid-cols-3 gap-8 mt-10">
+      ${steps.map(([n, t, d], i) => `<div data-anim="up" style="--i:${i * 2}" class="draw border-t border-edge pt-5"><span class="num font-display text-5xl font-semibold">${n}</span><h3 class="font-display text-lg font-semibold mt-3">${t}</h3><p class="text-sm text-muted mt-2 leading-relaxed">${d}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="py-14">
+    <p data-anim="up" class="text-xs uppercase tracking-widest text-accent">Why it sticks</p>
+    <h2 data-anim="blur" style="--i:1" class="font-display text-3xl sm:text-4xl font-semibold mt-3 max-w-lg leading-tight">Study that pushes back.</h2>
+    <div class="grid sm:grid-cols-2 gap-x-12 mt-8">
+      ${feats.map(([t, d], i) => `<div data-anim="${i % 2 ? 'right' : 'left'}" style="--i:${Math.floor(i / 2)}" class="draw border-t border-edge py-5"><h3 class="font-display font-semibold">${t}</h3><p class="text-sm text-muted mt-1.5 leading-relaxed">${d}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div data-anim="scale" class="relative overflow-hidden rounded-3xl border border-edge bg-surface/60 px-6 py-14 text-center">
+      <div class="orb glow-in" style="width:300px;height:300px;left:50%;top:-40%;margin-left:-150px" aria-hidden="true"></div>
+      <div class="relative mb-6 flex justify-center">${logoMark('h-20')}</div>
+      <h2 class="relative font-display text-3xl sm:text-4xl font-semibold">Ready when you are.</h2>
+      <p class="relative text-muted mt-3 text-sm">Your notes stay on your device. Only points and avatar reach the leaderboard.</p>
+      <button data-start class="cta relative mt-8 rounded-xl bg-accent text-bg font-semibold px-8 py-4 text-base">Start a quiz →</button>
+    </div>
+  </section>
+  <p class="text-center text-xs text-muted pb-2">NoteStudy · study smarter, not longer</p>`;
+}
+
+/* ---------- leaderboard (shared across viewers via the artifact db) ---------- */
+let boardDb = null, boardUser = null, myId = null;
+let boardRows = [], boardState = 'loading';     // loading | ready | off
+let lastSig = '', lastCloudSig = '', syncing = false, syncQueued = false;
+let authState = 'checking';            // checking | ready | none
+let authMe = null, cloudProfile = null, cloudStatus = 'idle';   // idle | ok | error
+let resolveAuth; const authReady = new Promise(r => { resolveAuth = r; });
+const refreshBoardView = () => { if(state.view === 'board') render(); };
+const refreshAccount = () => {
+  if(state.view !== 'account') return;
+  const vals = [...root.querySelectorAll('input')].map(i => [i.id, i.type === 'checkbox' ? i.checked : i.value]);
+  render();
+  vals.forEach(([id, v]) => { const el = document.getElementById(id); if(!el) return; if(el.type === 'checkbox') el.checked = v; else el.value = v; });
+};
+const isLinked = () => !!(profile.account && profile.account.mode !== 'guest' && boardDb && myId);
+const boardBody = () => ({ lifetime: profile.lifetime, points: profile.points, color: profile.equipped.color, costume: profile.equipped.costume, nick: profile.account ? profile.account.nick : '', acct: (profile.account && profile.account.key) || '' });
+const mySig = () => JSON.stringify(boardBody());
+const snapshot = () => ({ points: profile.points, lifetime: profile.lifetime, owned: [...profile.owned], equipped: { ...profile.equipped } });
+const cloudSigOf = o => JSON.stringify({ nick: o.nick, points: Number(o.points) || 0, lifetime: Number(o.lifetime) || 0, owned: o.owned, equipped: o.equipped });
+const localCloudSig = () => cloudSigOf({ nick: profile.account ? profile.account.nick : '', ...snapshot() });
+const cloudPath = () => 'data/users/' + myId + '/profile';
+
+/* ----- password hashing (PBKDF2-SHA256 via WebCrypto) ----- */
+const PW_ITER = 300000;
+const NO_CRYPTO = 'This browser cannot protect passwords, so password accounts are unavailable here.';
+const hasCrypto = () => !!(window.crypto && window.crypto.subtle && window.TextEncoder);
+const toB64 = buf => btoa(String.fromCharCode(...new Uint8Array(buf)));
+const fromB64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const newSalt = () => toB64(window.crypto.getRandomValues(new Uint8Array(16)));
+async function hashPassword(pw, saltB64, iter){
+  const key = await window.crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveBits']);
+  const bits = await window.crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt: fromB64(saltB64), iterations: iter }, key, 256);
+  return toB64(bits);
+}
+const toB64u = buf => toB64(buf).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const fromB64u = s => fromB64(s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4));
+async function deriveAesKey(pw, saltB64, iter){
+  const base = await window.crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+  return window.crypto.subtle.deriveKey({ name: 'PBKDF2', hash: 'SHA-256', salt: fromB64(saltB64), iterations: iter }, base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+}
+const safeEqual = (a, b) => { if(a.length !== b.length) return false; let r = 0; for(let i = 0; i < a.length; i++) r |= a.charCodeAt(i) ^ b.charCodeAt(i); return r === 0; };
+const cleanNick = s => String(s || '').replace(/\s+/g, ' ').trim();
+const userKey = s => cleanNick(s).normalize('NFKC').toLowerCase();
+function nickError(s){
+  if(s.length < 2 || s.length > 20) return 'Use 2 to 20 characters.';
+  if(!/^[\p{L}\p{N} ._-]+$/u.test(s)) return 'Use letters, numbers, spaces, dots, dashes or underscores.';
+  return '';
+}
+function usernameError(s){
+  if(s.length < 3 || s.length > 20) return 'Use 3 to 20 characters for your username.';
+  if(!/^[A-Za-z0-9._-]+$/.test(s)) return 'Use letters, numbers, dots, dashes or underscores (no spaces).';
+  return '';
+}
+const COMMON_PW = new Set(['password','password1','12345678','123456789','1234567890','qwertyuiop','qwerty123','11111111','iloveyou','abcd1234','00000000','letmein1']);
+function passwordError(pw, user){
+  if(pw.length < 8) return 'Use at least 8 characters.';
+  if(pw.length > 64) return 'Use 64 characters or fewer.';
+  if(COMMON_PW.has(pw.toLowerCase())) return 'That password is too easy to guess.';
+  if(user && pw.toLowerCase() === String(user).toLowerCase()) return 'Your password cannot be your username.';
+  return '';
+}
+function strengthOf(pw){
+  let s = 0; if(pw.length >= 8) s++; if(pw.length >= 12) s++; if(/[a-z]/.test(pw) && /[A-Z]/.test(pw)) s++; if(/\d/.test(pw)) s++; if(/[^A-Za-z0-9]/.test(pw)) s++;
+  return !pw ? 0 : s <= 2 ? 1 : s <= 3 ? 2 : 3;
+}
+/* gentle brute-force slowdown (client side only) */
+const failBook = DB.get('ntq_fail', {});
+const lockedFor = key => { const f = failBook[key]; return f && f.until > Date.now() ? Math.ceil((f.until - Date.now()) / 1000) : 0; };
+function noteFail(key){ const f = failBook[key] || { n: 0 }; f.n++; if(f.n >= 5) f.until = Date.now() + 30000 * Math.min(f.n - 4, 10); failBook[key] = f; DB.set('ntq_fail', failBook); }
+function clearFail(key){ delete failBook[key]; DB.set('ntq_fail', failBook); }
+
+/* ----- login records: shared account storage when signed in to Claude, else this device ----- */
+const localLogins = () => DB.get('ntq_logins', {});
+async function loginGet(where, key){
+  if(where === 'cloud'){ if(!boardDb) throw new Error('offline'); const s = await boardDb.doc('logins/' + key).get(); return s.exists ? s.data() : null; }
+  return localLogins()[key] || null;
+}
+async function loginPut(where, key, rec){
+  if(where === 'cloud'){ if(!boardDb) throw new Error('offline'); await boardDb.doc('logins/' + key).set(rec); }
+  else { const all = localLogins(); all[key] = rec; DB.set('ntq_logins', all); }
+}
+async function loginPatch(where, key, patch){
+  if(where === 'cloud'){ if(!boardDb) throw new Error('offline'); await boardDb.doc('logins/' + key).update(patch); }
+  else { const all = localLogins(); if(all[key]) all[key] = { ...all[key], ...patch }; DB.set('ntq_logins', all); }
+}
+async function loginDel(where, key){
+  if(where === 'cloud'){ if(!boardDb) throw new Error('offline'); await boardDb.doc('logins/' + key).delete(); }
+  else { const all = localLogins(); delete all[key]; DB.set('ntq_logins', all); }
+}
+const OFFLINE_MSG = 'We cannot reach your account right now. Please try again in a moment.';
+
+/* ----- syncing ----- */
+async function syncBoard(){
+  const a = profile.account;
+  if(!a || a.mode === 'guest') return;
+  if(syncing){ syncQueued = true; return; }
+  syncing = true;
+  try{
+    do{
+      syncQueued = false;
+      if(boardDb && myId){
+        const sig = mySig();
+        if(sig !== lastSig){
+          const ref = boardDb.doc('leaderboard/' + myId);
+          if(profile.lifetime > 0) await ref.set(boardBody()); else await ref.delete();
+          lastSig = sig;
+        }
+      }
+      const csig = localCloudSig();
+      if(csig !== lastCloudSig){
+        const payload = { nick: a.nick, ...snapshot(), createdAt: a.createdAt || 0, savedAt: Date.now() };
+        if(a.mode === 'cloud' && boardDb && myId){
+          await boardDb.doc(cloudPath()).set(payload); cloudProfile = payload; lastCloudSig = csig;
+        } else if(a.mode === 'password'){
+          await loginPatch(a.where, a.key, { nick: a.nick, profile: snapshot(), savedAt: payload.savedAt }); lastCloudSig = csig;
+        }
+      }
+      cloudStatus = 'ok';
+    } while(syncQueued);
+  } catch(e){ cloudStatus = 'error'; }
+  finally{ syncing = false; if(state.view === 'shop') render(); else refreshAccount(); }
+}
+async function flushSync(){ syncBoard(); for(let i = 0; i < 100 && syncing; i++) await new Promise(r => setTimeout(r, 40)); }
+function resetProfile(){ profile = defaultProfile(); lastSig = ''; lastCloudSig = ''; cloudStatus = 'idle'; save(); }
+const validItems = ids => (Array.isArray(ids) ? ids : []).filter(id => getItem(id));
+// The remote copy wins when it has more progress (lifetime points only ever go up).
+const remoteIsAhead = d => (Number(d.lifetime) || 0) > profile.lifetime || ((Number(d.lifetime) || 0) === profile.lifetime && (Number(d.savedAt) || 0) > (profile.savedAt || 0));
+function adoptProfile(d){
+  const owned = [...new Set([...defaultProfile().owned, ...validItems(d.owned)])];
+  const eq = { ...defaultProfile().equipped, ...(d.equipped || {}) };
+  ['theme','color','costume'].forEach(k => { if(eq[k] && !owned.includes(eq[k])) eq[k] = defaultProfile().equipped[k]; });
+  profile.points = Number(d.points) || 0; profile.lifetime = Number(d.lifetime) || 0; profile.owned = owned; profile.equipped = eq;
+}
+
+/* ----- account actions ----- */
+async function createPasswordAccount(username, pw){
+  await authReady;
+  const key = userKey(username), where = boardDb ? 'cloud' : 'device';
+  if(await loginGet(where, key) || (where === 'cloud' && localLogins()[key])) return { error: 'That username is taken. Try another one.' };
+  const salt = newSalt(), hash = await hashPassword(pw, salt, PW_ITER), createdAt = Date.now();
+  await loginPut(where, key, { nick: username, salt, iter: PW_ITER, hash, createdAt, profile: snapshot(), savedAt: createdAt });
+  const back = await loginGet(where, key);
+  if(!back || back.salt !== salt) return { error: 'That username was just taken. Try another one.' };
+  const legacy = profile.account && profile.account.mode === 'cloud';
+  profile.account = { nick: username, mode: 'password', key, where, createdAt }; save();
+  lastSig = ''; lastCloudSig = cloudSigOf({ nick: username, ...snapshot() });
+  if(legacy && boardDb && myId){ try{ await boardDb.doc(cloudPath()).delete(); cloudProfile = null; } catch(e){} }
+  cloudStatus = 'ok'; syncBoard();
+  return { ok: true };
+}
+async function loginAccount(username, pw){
+  const key = userKey(username), wait = lockedFor(key);
+  if(wait) return { error: `Too many tries. Wait ${wait} seconds and try again.` };
+  await authReady;
+  let rec = null, where = null;
+  if(boardDb){ rec = await loginGet('cloud', key); if(rec) where = 'cloud'; }
+  if(!rec){ rec = localLogins()[key] || null; if(rec) where = 'device'; }
+  const bad = { error: 'Wrong username or password.' };
+  if(!rec || !rec.salt){ noteFail(key); return bad; }
+  const h = await hashPassword(pw, rec.salt, rec.iter || PW_ITER);
+  if(!safeEqual(h, rec.hash)){ noteFail(key); return bad; }
+  clearFail(key);
+  if(profile.account && !(profile.account.mode === 'password' && profile.account.key === key)) resetProfile();   // switching accounts
+  const remote = rec.profile || {};
+  if(remoteIsAhead(remote)) adoptProfile(remote);
+  profile.account = { nick: rec.nick, mode: 'password', key, where, createdAt: rec.createdAt || 0 }; save();
+  lastSig = ''; lastCloudSig = ''; syncBoard();
+  return { ok: true };
+}
+async function changePassword(oldPw, newPw){
+  const a = profile.account; await authReady;
+  const rec = await loginGet(a.where, a.key);
+  if(!rec) return { error: 'We could not find your account. Log in again.' };
+  const h = await hashPassword(oldPw, rec.salt, rec.iter || PW_ITER);
+  if(!safeEqual(h, rec.hash)) return { error: 'Your current password is wrong.' };
+  const salt = newSalt(), hash = await hashPassword(newPw, salt, PW_ITER);
+  await loginPatch(a.where, a.key, { salt, iter: PW_ITER, hash });
+  return { ok: true };
+}
+/* Backup code: lets an account move between devices with no server at all.
+   The code is the account data encrypted with the account's own password (AES-GCM). */
+async function makeBackup(pw){
+  const a = profile.account; await authReady;
+  const rec = await loginGet(a.where, a.key);
+  if(!rec) return { error: 'We could not find your account.' };
+  const h = await hashPassword(pw, rec.salt, rec.iter || PW_ITER);
+  if(!safeEqual(h, rec.hash)) return { error: 'That password is wrong.' };
+  const salt = newSalt(), key = await deriveAesKey(pw, salt, PW_ITER), iv = window.crypto.getRandomValues(new Uint8Array(12));
+  const plain = new TextEncoder().encode(JSON.stringify({ nick: a.nick, createdAt: a.createdAt || 0, profile: snapshot() }));
+  const ct = await window.crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, plain);
+  const pkt = { v: 1, u: a.nick, s: salt, i: PW_ITER, n: toB64(iv), c: toB64(ct) };
+  return { code: 'NSB1.' + toB64u(new TextEncoder().encode(JSON.stringify(pkt))) };
+}
+async function importBackup(code, pw){
+  const bad = { error: 'That backup code is not valid. Copy the whole code and try again.' };
+  let pkt; try{ pkt = JSON.parse(new TextDecoder().decode(fromB64u(String(code).trim().replace(/\s+/g, '').replace(/^NSB1\./, '')))); } catch(e){ return bad; }
+  if(!pkt || pkt.v !== 1 || !pkt.s || !pkt.n || !pkt.c || !(pkt.i > 0 && pkt.i <= 2000000)) return bad;
+  const wait = lockedFor(userKey(pkt.u || '')); if(wait) return { error: `Too many tries. Wait ${wait} seconds and try again.` };
+  let data;
+  try{ data = JSON.parse(new TextDecoder().decode(await window.crypto.subtle.decrypt({ name: 'AES-GCM', iv: fromB64(pkt.n) }, await deriveAesKey(pw, pkt.s, pkt.i), fromB64(pkt.c)))); }
+  catch(e){ noteFail(userKey(pkt.u || '')); return { error: 'Wrong password, or the code was damaged.' }; }
+  if(!data || !data.nick || usernameError(String(data.nick))) return bad;
+  await authReady;
+  const key = userKey(data.nick), where = boardDb ? 'cloud' : 'device';
+  let rec = await loginGet(where, key);
+  if(rec){
+    const h = await hashPassword(pw, rec.salt, rec.iter || PW_ITER);
+    if(!safeEqual(h, rec.hash)) return { error: 'That username already exists here with a different password.' };
+  } else {
+    const salt = newSalt(), hash = await hashPassword(pw, salt, PW_ITER);
+    rec = { nick: data.nick, salt, iter: PW_ITER, hash, createdAt: data.createdAt || Date.now(), profile: data.profile || {}, savedAt: Date.now() };
+    await loginPut(where, key, rec);
+  }
+  clearFail(key);
+  if(profile.account && !(profile.account.mode === 'password' && profile.account.key === key)) resetProfile();
+  [rec.profile || {}, data.profile || {}].forEach(p => { if(remoteIsAhead(p)) adoptProfile(p); });
+  profile.account = { nick: rec.nick, mode: 'password', key, where, createdAt: rec.createdAt || 0 }; save();
+  lastSig = ''; lastCloudSig = ''; syncBoard();
+  return { ok: true };
+}
+async function deleteAccount(pw, alsoNotes){
+  const a = profile.account; await authReady;
+  if(a && a.mode === 'password'){
+    const rec = await loginGet(a.where, a.key);
+    if(rec){
+      const h = await hashPassword(pw || '', rec.salt, rec.iter || PW_ITER);
+      if(!safeEqual(h, rec.hash)) return { error: 'That password is wrong, so nothing was deleted.' };
+      await loginDel(a.where, a.key);
+    }
+  }
+  if(a && a.mode !== 'guest' && boardDb && myId){ try{ await boardDb.doc('leaderboard/' + myId).delete(); await boardDb.doc(cloudPath()).delete(); } catch(e){} }
+  if(a && a.key) clearFail(a.key);
+  cloudProfile = null;
+  if(alsoNotes){ notes = []; quizzes = []; attempts = []; pendingFiles = []; ['ntq_notes','ntq_quizzes','ntq_attempts'].forEach(k => localStorage.removeItem(k)); }
+  resetProfile();
+  return { ok: true };
+}
+async function initBoard(){
+  try{
+    if(!window.claude || !window.claude.use){ boardState = 'off'; authState = 'none'; refreshBoardView(); return; }
+    const [db, user] = await Promise.all([claude.use('db'), claude.use('user')]);
+    const me = user ? await user.me() : null;
+    if(!db || !user || !me || !me.id){ boardState = 'off'; authState = 'none'; refreshBoardView(); return; }
+    boardDb = db; boardUser = user; myId = me.id;
+    authMe = { id: me.id, name: me.name || '', avatar: me.avatarUrl || '' };
+    try{ const snap = await db.doc(cloudPath()).get(); cloudProfile = snap.exists ? snap.data() : null; } catch(e){ cloudProfile = null; }
+    authState = 'ready';
+    const a = profile.account;
+    if(a && a.mode === 'cloud'){
+      if(cloudProfile && remoteIsAhead(cloudProfile)){ adoptProfile(cloudProfile); save(); if(state.view !== 'quiz') render(); }
+      if(cloudProfile) lastCloudSig = cloudSigOf(cloudProfile);
+    }
+    if(a && a.mode !== 'guest'){
+      try{
+        const mine = await db.doc('leaderboard/' + myId).get();
+        if(mine.exists){ const d = mine.data(); lastSig = JSON.stringify({ lifetime: Number(d.lifetime) || 0, points: typeof d.points === 'number' ? d.points : -1, color: d.color, costume: d.costume ?? null, nick: d.nick || '', acct: d.acct || '' }); }
+      } catch(e){}
+    }
+    db.collection('leaderboard').limit(200).onSnapshot(async snap => {
+      const raw = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+      let ps = {};
+      try{ ps = await boardUser.profiles(raw.map(r => r.id)); } catch(e){}
+      const best = new Map();
+      raw.forEach(r => {
+        const row = {
+          id: r.id, acct: String(r.acct || ''), lifetime: Number(r.lifetime) || 0, points: typeof r.points === 'number' ? r.points : null, color: r.color, costume: r.costume,
+          name: String(r.nick || '').slice(0, 20) || (ps[r.id] && ps[r.id].name) || 'Student'
+        };
+        const k = row.acct || row.id, cur = best.get(k);
+        if(!cur || row.lifetime > cur.lifetime) best.set(k, row);   // one row per account, even if used from several Claude accounts
+      });
+      boardRows = [...best.values()];
+      boardState = 'ready'; refreshBoardView();
+    }, () => { boardState = 'off'; refreshBoardView(); });
+  } catch(e){ boardState = 'off'; authState = 'none'; refreshBoardView(); }
+  finally{
+    resolveAuth();
+    try{   // an account deleted from another device should not linger here
+      const a = profile.account;
+      if(a && a.mode === 'password' && (a.where === 'device' || boardDb)){
+        if(!(await loginGet(a.where, a.key))){ resetProfile(); state.flash = 'That account was deleted, so you were signed out.'; if(state.view !== 'quiz') render(); return; }
+        syncBoard();
+      } else if(a && a.mode === 'cloud') syncBoard();
+    } catch(e){}
+    refreshAccount();
+  }
+}
+
+/* ---------- account page (log in / create / manage) ---------- */
+function accountStrip(){
+  const a = profile.account;
+  if(!a) return `<div class="rounded-xl border border-accent/30 bg-accent/10 px-4 py-3 mb-4 flex items-center gap-3"><p class="flex-1 text-sm">Create an account to save your points and join the leaderboard.</p><button data-nav="account" class="rounded-xl bg-accent text-bg font-semibold px-4 py-2 text-sm shrink-0">Account</button></div>`;
+  const status = a.mode === 'password' ? (cloudStatus === 'error' ? '⚠ Could not save yet. We will try again.' : '🔒 Password account · ' + (a.where === 'cloud' ? 'works on any device' : 'saved on this device'))
+    : a.mode === 'cloud' ? (cloudStatus === 'error' ? '⚠ Could not save yet. We will try again.' : '☁ Saved to your Claude account · no password yet') : 'Guest · saved on this device only';
+  return `<div class="rounded-xl border border-edge bg-surface px-4 py-3 mb-4 flex items-center gap-3">
+    <div class="flex-1 min-w-0"><p class="text-sm font-medium truncate">${escapeHtml(a.nick)}</p><p class="text-xs ${cloudStatus === 'error' && a.mode !== 'guest' ? 'text-bad' : 'text-muted'}" role="status">${status}</p></div>
+    <button data-nav="account" class="rounded-lg border border-edge px-3 py-2 text-xs hover:border-accent/50 shrink-0">Manage account</button>
+  </div>`;
+}
+const pwField = (id, label, extra = '') => `<div class="mt-4"><label for="${id}" class="text-sm text-muted mb-1.5 block">${label}</label><div class="relative"><input id="${id}" type="password" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3 pr-16" ${extra}><button type="button" data-showpw="${id}" aria-label="Show or hide ${label.toLowerCase()}" class="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-muted hover:text-ink px-2 py-1.5">Show</button></div></div>`;
+const textField = (id, label, value = '', extra = '') => `<div class="mt-4"><label for="${id}" class="text-sm text-muted mb-1.5 block">${label}</label><input id="${id}" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3" value="${escapeAttr(value)}" ${extra}></div>`;
+const meter = () => `<div class="mt-3"><div class="h-1.5 rounded-full bg-surface2 overflow-hidden"><div id="pwBar" class="h-full w-0 rounded-full transition-all duration-300"></div></div><p id="pwLabel" class="text-xs text-muted mt-1.5">Use 8 or more characters. Longer is stronger.</p></div>`;
+const errLine = id => `<p id="${id}" class="text-sm text-bad mt-3 min-h-[1.25rem]" role="alert"></p>`;
+const pwWarning = () => `<p class="text-xs text-muted mt-3 leading-relaxed">Pick a password you do not use anywhere else. It keeps casual snoopers out of your NoteStudy profile, but it is not bank-level security.</p>`;
+
+function tabLogin(){
+  const a = profile.account;
+  const restore = (!a && authState === 'ready' && cloudProfile && cloudProfile.nick) ? (() => {
+    const color = getItem((cloudProfile.equipped || {}).color) || ITEMS.find(i => i.id === 'color_default');
+    const cos = getItem((cloudProfile.equipped || {}).costume);
+    return `<div class="rounded-xl border border-accent/30 bg-accent/10 p-4 mb-5 flex items-center gap-4">
+      <div class="shrink-0 rounded-xl bg-surface2 p-1">${avatarSVG(56, color.v, cos ? cos.v.kind : null)}</div>
+      <div class="flex-1 min-w-0 text-sm"><p class="font-medium truncate">Saved profile: ${escapeHtml(String(cloudProfile.nick).slice(0, 20))}</p><p class="text-muted text-xs">${(Number(cloudProfile.lifetime) || 0).toLocaleString()} lifetime points, saved to your Claude account.</p></div>
+      <button id="restoreBtn" class="rounded-xl bg-accent text-bg font-semibold px-3.5 py-2.5 text-sm shrink-0">Continue</button></div>`;
+  })() : '';
+  return `${restore}
+    <p class="text-sm text-muted">${a && a.mode === 'password' ? `You are logged in as <span class="text-ink font-medium">${escapeHtml(a.nick)}</span>. Log in to a different account to switch.` : 'Played before? Log in with your username and password. No password yet? Open the Password tab after you continue with your saved profile.'}</p>
+    ${textField('loginUser', 'Username', '', 'autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="20"')}
+    ${pwField('loginPw', 'Password', 'autocomplete="current-password"')}
+    ${errLine('loginErr')}
+    <button id="loginBtn" class="cta mt-1 w-full rounded-xl bg-accent text-bg font-semibold px-6 py-3.5">Log in</button>
+    ${a && a.mode === 'password' ? '<p class="text-xs text-muted mt-3">Switching accounts signs you out of this one on this device. Its progress stays saved.</p>' : ''}
+    <details class="mt-6 border-t border-edge pt-4" ${state.bkOpen ? 'open' : ''}>
+      <summary class="text-sm cursor-pointer select-none hover:text-accent">Have a backup code from another device?</summary>
+      <p class="text-xs text-muted mt-2">Paste the code and the password of that account. This works anywhere, even outside Claude.</p>
+      <div class="mt-3"><label for="bkIn" class="text-sm text-muted mb-1.5 block">Backup code</label><textarea id="bkIn" rows="3" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3 text-xs font-mono break-all" spellcheck="false" placeholder="NSB1.…"></textarea></div>
+      ${pwField('bkInPw', 'Password of that account', 'autocomplete="current-password"')}
+      ${errLine('bkErr')}
+      <button id="bkInBtn" class="mt-1 w-full rounded-xl border border-accent/60 text-accent font-semibold px-6 py-3 hover:bg-accent/10 transition-colors">Log in with backup code</button>
+    </details>`;
+}
+function tabCreate(){
+  const a = profile.account;
+  if(a && a.mode === 'password'){
+    return `<p class="text-sm text-muted">Change the password for <span class="text-ink font-medium">${escapeHtml(a.nick)}</span>.</p>
+      ${pwField('pwOld', 'Current password', 'autocomplete="current-password"')}
+      ${pwField('pwNew', 'New password', 'autocomplete="new-password"')}
+      ${meter()}
+      ${pwField('pwConfirm', 'Repeat new password', 'autocomplete="new-password"')}
+      ${errLine('pwErr')}
+      <button id="changeBtn" class="cta mt-1 w-full rounded-xl bg-accent text-bg font-semibold px-6 py-3.5">Change password</button>`;
+  }
+  const upgrading = !!a;
+  const first = ((authMe && authMe.name) || '').split(' ')[0].replace(/[^A-Za-z0-9._-]/g, '').slice(0, 20);
+  const prefill = (a && /^[A-Za-z0-9._-]{3,20}$/.test(a.nick) ? a.nick : '') || first;
+  const where = boardDb ? 'Your account is saved online, so you can log in from any device.' : 'Your account is saved on this device. After you sign up, use "Move to another device" in the Manage tab to take it with you.';
+  return `<p class="text-sm text-muted">${upgrading ? 'Add a password to your profile. Your points, items and avatar come with you, and you can then log in from anywhere.' : 'Pick a username and password. You will use them to log in on any device.'}</p>
+    ${textField('newUser', 'Username', prefill, 'autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="20" aria-describedby="userHelp"')}
+    <p id="userHelp" class="text-xs text-muted mt-1.5">3 to 20 letters, numbers, dots, dashes or underscores. It shows on the leaderboard.</p>
+    ${pwField('pwNew', 'Password', 'autocomplete="new-password"')}
+    ${meter()}
+    ${pwField('pwConfirm', 'Repeat password', 'autocomplete="new-password"')}
+    ${errLine('createErr')}
+    <button id="createBtn" class="cta mt-1 w-full rounded-xl bg-accent text-bg font-semibold px-6 py-3.5">${upgrading ? 'Add password' : 'Create account'}</button>
+    <p class="text-xs text-muted mt-3">${where}</p>
+    ${pwWarning()}
+    ${!a ? `<button id="guestBtn" class="mt-4 w-full text-sm text-muted hover:text-ink">Play as a guest instead<span class="block text-xs">Saved on this device only, no leaderboard.</span></button>` : ''}`;
+}
+function tabManage(){
+  const a = profile.account;
+  const badge = !a ? 'Not signed in' : a.mode === 'password' ? '🔒 Password account · ' + (a.where === 'cloud' ? 'works on any device' : 'saved on this device')
+    : a.mode === 'cloud' ? '☁ Saved to your Claude account · no password yet' : 'Guest · this device only';
+  const arm = state.signoutArm, open = state.delOpen;
+  const delTitle = a ? 'Delete account' : 'Delete data on this device';
+  const delText = !a ? 'Removes your points, items and avatar from this device.'
+    : a.mode === 'password' ? 'Permanently deletes your account, its password, your points, items, avatar and leaderboard spot. This cannot be undone.'
+    : a.mode === 'cloud' ? 'Permanently deletes your saved profile, points, items, avatar and leaderboard spot. This cannot be undone.' : 'Removes your guest points, items and avatar from this device. This cannot be undone.';
+  return `
+    <div class="rounded-xl border border-edge bg-surface2 p-4 flex items-center gap-4">
+      <div class="shrink-0 rounded-xl bg-surface p-1">${myAvatar(56)}</div>
+      <div class="flex-1 min-w-0"><p class="font-display font-semibold truncate">${a ? escapeHtml(a.nick) : 'Not signed in'}</p><p class="text-xs text-muted mt-0.5" role="status">${badge}</p><p class="text-xs text-muted mt-0.5">${profile.points.toLocaleString()} pts · ${profile.lifetime.toLocaleString()} lifetime</p></div>
+    </div>
+    ${state.acctMsg ? `<p class="text-sm text-accent mt-3" role="status">${escapeHtml(state.acctMsg)}</p>` : ''}
+    ${a && a.mode !== 'password' ? `<div class="rounded-xl border border-accent/30 bg-accent/10 p-4 mt-4 flex items-center gap-3"><p class="flex-1 text-sm">Add a password so you can log in from any device or account.</p><button data-atab="create" class="rounded-xl bg-accent text-bg font-semibold px-4 py-2.5 text-sm shrink-0">Add password</button></div>` : ''}
+    ${a && a.mode !== 'password' ? `<div class="mt-5">${textField('renameInput', 'Display name', a.nick, 'maxlength="20" autocomplete="nickname"')}${errLine('renameErr')}<button id="renameBtn" class="rounded-xl border border-edge px-4 py-2.5 text-sm hover:border-accent/50">Save name</button></div>` : ''}
+    ${!a ? `<div class="rounded-xl border border-accent/30 bg-accent/10 p-4 mt-4 flex items-center gap-3"><p class="flex-1 text-sm">You are not signed in yet.</p><button data-atab="create" class="rounded-xl bg-accent text-bg font-semibold px-4 py-2.5 text-sm shrink-0">Create account</button></div>` : ''}
+
+    ${a && a.mode === 'password' ? `<div class="border-t border-edge mt-6 pt-5">
+      <h2 class="font-display font-semibold">Move to another device</h2>
+      <p class="text-sm text-muted mt-1">Make a backup code, then paste it on your other device under Log in. No Claude account needed.</p>
+      ${pwField('bkPw', 'Your password', 'autocomplete="current-password"')}
+      ${errLine('bkMakeErr')}
+      <button id="bkMakeBtn" class="rounded-xl border border-edge px-5 py-2.5 text-sm hover:border-accent/50">Create backup code</button>
+      ${state.backupCode ? `<div class="mt-4"><label for="bkOut" class="text-sm text-muted mb-1.5 block">Your backup code</label><textarea id="bkOut" readonly rows="4" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3 text-xs font-mono break-all">${escapeHtml(state.backupCode)}</textarea><div class="flex items-center gap-3 mt-2"><button id="bkCopyBtn" class="rounded-xl bg-accent text-bg font-semibold px-4 py-2.5 text-sm">Copy code</button><p id="bkCopyMsg" class="text-xs text-muted" role="status">Anyone with this code and your password can open your account.</p></div></div>` : ''}
+    </div>` : ''}
+
+    <div class="border-t border-edge mt-6 pt-5">
+      <h2 class="font-display font-semibold">Sign out</h2>
+      <p class="text-sm text-muted mt-1">${!a ? 'You are not signed in, so there is nothing to sign out of.' : a.mode === 'guest' ? 'Guest points and items will be removed from this device.' : 'Your points and items stay saved in your account. Log in again to get them back.'} Your notes and quizzes stay on this device.</p>
+      <button id="signoutBtn" ${!a ? 'disabled' : ''} class="mt-3 rounded-xl border px-5 py-2.5 text-sm transition-colors ${!a ? 'border-edge text-muted opacity-50' : arm ? 'border-bad text-bad bg-bad/10' : 'border-edge hover:border-accent/50'}">${arm ? 'Tap again to sign out' : 'Sign out'}</button>
+    </div>
+
+    <div class="border-t border-edge mt-6 pt-5">
+      <h2 class="font-display font-semibold text-bad">${delTitle}</h2>
+      <p class="text-sm text-muted mt-1">${delText}</p>
+      ${!open ? `<button id="delOpenBtn" class="mt-3 rounded-xl border border-bad/50 text-bad px-5 py-2.5 text-sm hover:bg-bad/10 transition-colors">${delTitle}…</button>` : `
+      <div class="mt-4 rounded-xl border border-bad/40 bg-bad/5 p-4" role="group" aria-label="Confirm deletion">
+        ${a && a.mode === 'password' ? pwField('delPw', 'Enter your password to confirm', 'autocomplete="current-password"') : ''}
+        <label class="flex items-start gap-2.5 mt-4 text-sm cursor-pointer"><input id="delNotes" type="checkbox" class="mt-1 h-4 w-4 accent-[rgb(var(--accent))]" checked><span>Also remove my saved notes, quizzes and score history from this device</span></label>
+        ${errLine('delErr')}
+        <div class="flex gap-3 mt-1"><button id="delGoBtn" class="flex-1 rounded-xl bg-bad text-bg font-semibold px-5 py-3 text-sm">Delete forever</button><button id="delCancelBtn" class="rounded-xl border border-edge px-5 py-3 text-sm">Cancel</button></div>
+      </div>`}
+    </div>`;
+}
+function viewAccount(){
+  const a = profile.account;
+  const tab = state.acctTab || (a ? 'manage' : (state.next ? 'create' : 'login'));
+  const tabs = [['login', 'Log in'], ['create', a ? (a.mode === 'password' ? 'Password' : 'Add password') : 'Create account'], ['manage', 'Manage']];
+  const body = tab === 'create' ? tabCreate() : tab === 'manage' ? tabManage() : tabLogin();
+  return `<div class="pt-7 pb-4 fadein flex items-center gap-4">
+      ${logoMark('h-12')}
+      <div><h1 class="font-display text-2xl font-semibold leading-tight">Account</h1><p class="text-sm text-muted">Log in, create an account, or manage yours.</p></div>
+    </div>
+    <div class="flex gap-2 mb-5" role="tablist">
+      ${tabs.map(([k, l]) => `<button data-atab="${k}" role="tab" aria-selected="${tab === k}" class="flex-1 rounded-xl border px-3 py-2.5 text-sm ${tab === k ? 'border-accent text-accent bg-accent/10' : 'border-edge text-muted'}">${l}</button>`).join('')}
+    </div>
+    <section class="rounded-2xl border border-edge bg-surface p-5 sm:p-6 fadein" aria-live="polite">${body}</section>`;
+}
+
+const rowsWithMe = () => boardRows.map(r => ({ ...r, isMe: r.id === myId || !!(profile.account && profile.account.key && r.acct === profile.account.key) }));
+
+function viewBoard(){
+  const tab = state.boardTab === 'now' ? 'now' : 'all';
+  const metric = r => tab === 'now' ? r.points : r.lifetime;
+  const list = rowsWithMe().filter(r => metric(r) !== null).sort((a, b) => metric(b) - metric(a) || b.lifetime - a.lifetime);
+  const top = list.slice(0, 25);
+  const rank = list.findIndex(r => r.isMe) + 1;
+  const medals = ['🥇','🥈','🥉'];
+  const mine = tab === 'now' ? profile.points : profile.lifetime;
+  let body;
+  if(boardState === 'loading') body = `<div class="rounded-2xl border border-edge bg-surface p-6 text-center text-sm text-muted" role="status">Loading the leaderboard…</div>`;
+  else if(boardState === 'off') body = `<div class="rounded-2xl border border-edge bg-surface p-5 text-sm text-muted" role="status">The shared leaderboard isn't available on this page right now. Your own totals are shown above.</div>`;
+  else if(!top.length) body = `<div class="rounded-2xl border border-edge bg-surface p-6 text-center fadein"><p class="font-display font-semibold">Nobody is on the board yet</p><p class="text-sm text-muted mt-1">Finish a quiz to claim the first spot.</p></div>`;
+  else body = `<ol class="space-y-2" aria-label="${tab === 'now' ? 'Current points' : 'All time'} ranking">${top.map((r, i) => {
+    const color = getItem(r.color) || ITEMS.find(x => x.id === 'color_default');
+    const costume = getItem(r.costume);
+    const av = avatarSVG(36, color.v, costume ? costume.v.kind : null);
+    return `<li data-anim="up" style="--i:${i % 8}" class="flex items-center gap-3 rounded-xl border px-3 py-2.5 ${r.isMe ? 'border-accent/60 bg-accent/10' : 'border-edge bg-surface'}">
+      <span class="w-7 text-center font-display font-semibold ${i < 3 ? 'text-lg' : 'text-sm text-muted'}">${i < 3 ? medals[i] : i + 1}</span>
+      <span class="block rounded-full bg-surface2 overflow-hidden shrink-0">${av}</span>
+      <span class="flex-1 min-w-0 truncate text-sm font-medium">${escapeHtml(r.name)}${r.isMe ? ' <span class="text-accent text-xs">(you)</span>' : ''}</span>
+      <span class="font-display font-semibold text-accent">${metric(r).toLocaleString()}</span>
+    </li>`; }).join('')}</ol>`;
+  const joinBanner = (!profile.account || profile.account.mode === 'guest') ? `<div class="rounded-2xl border border-accent/30 bg-accent/10 p-4 mb-5 flex items-center gap-3 fadein"><p class="flex-1 text-sm">${profile.account ? "Guests aren't ranked." : 'New here?'} Create an account to save your points and join the leaderboard.</p><button data-nav="account" class="rounded-xl bg-accent text-bg font-semibold px-4 py-2.5 text-sm shrink-0">Account</button></div>` : '';
+  return `
+  ${joinBanner}
+  <header class="pt-8 pb-4 fadein">
+    <h1 class="font-display text-2xl font-semibold">Leaderboard</h1>
+    <p class="text-sm text-muted mt-1">${tab === 'now' ? "Ranked by the points in each player's bank right now. Buying lowers your spot; selling raises it." : 'Ranked by total lifetime points. Spending or selling never lowers your rank.'}</p>
+  </header>
+  <div class="flex gap-2 mb-4" role="tablist">
+    ${[['all','All time'],['now','Current points']].map(([k, l]) => `<button data-btab="${k}" role="tab" aria-selected="${tab === k}" class="flex-1 rounded-xl border px-3 py-2.5 text-sm ${tab === k ? 'border-accent text-accent bg-accent/10' : 'border-edge text-muted'}">${l}</button>`).join('')}
+  </div>
+  <div class="rounded-2xl border border-edge bg-surface p-4 mb-5 flex items-center gap-4 fadein">
+    <span class="block rounded-full bg-surface2 overflow-hidden shrink-0">${myAvatar(52)}</span>
+    <div class="flex-1"><p class="text-xs text-muted">${tab === 'now' ? 'Your current points' : 'Your lifetime points'}</p><p class="font-display text-2xl font-semibold text-accent">${mine.toLocaleString()}</p></div>
+    ${rank ? `<div class="text-right"><p class="text-xs text-muted">Rank</p><p class="font-display text-2xl font-semibold">#${rank}</p></div>` : ''}
+  </div>
+  ${body}`;
+}
+
+/* ---------- app state ---------- */
+let pendingFiles = []; // {name, text} uploaded but not yet turned into a note
+function renderFileStatus(){
+  const box = $('#fileBox'), inline = $('#fileInline');
+  if(!box || !inline) return;
+  inline.innerHTML = pendingFiles.length
+    ? `<span class="text-accent">✓ File added: ${pendingFiles.map(f=>escapeHtml(f.name)).join(', ')}</span> <span class="text-muted">— will be combined with the text above</span>`
+    : '';
+  box.innerHTML = pendingFiles.map((f,i)=>`
+    <div class="flex items-center justify-between gap-3 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 fadein" role="status">
+      <div class="min-w-0"><p class="text-sm font-medium text-accent">✓ File added</p>
+      <p class="text-xs text-muted truncate">${escapeHtml(f.name)} · ${f.text.length.toLocaleString()} characters read</p></div>
+      <button data-rmfile="${i}" class="text-xs text-muted hover:text-bad shrink-0">Remove</button>
+    </div>`).join('');
+  box.querySelectorAll('[data-rmfile]').forEach(b => b.onclick = () => { pendingFiles.splice(+b.dataset.rmfile,1); renderFileStatus(); });
+}
+let state = { view:'landing', noteId:null, quizId:null, qIndex:0, answers:{} };
+const $ = sel => document.querySelector(sel);
+const root = $('#app');
+
+function go(view, patch={}){ state = { ...state, view, shopMsg:'', sellArm:'', signoutArm:false, delOpen:false, acctTab:'', acctMsg:'', backupCode:'', bkOpen:false, flash:'', next:'', ...patch }; render(); window.scrollTo(0,0); }
+
+/* ---------- views ---------- */
+function viewHome(){
+  return `
+  <header class="pt-8 pb-8 fadein">
+    <h1 class="font-display text-3xl sm:text-4xl font-semibold leading-tight">Turn any notes into<br>an instant practice quiz.</h1>
+    <p class="text-muted mt-3 max-w-md">Paste what you're studying. Get a gradeable quiz built only from your own material — no invented facts, no fluff.</p>
+  </header>
+  <section class="card p-4 sm:p-6 border border-edge rounded-2xl bg-surface fadein">
+    <label class="text-sm text-muted mb-2 block">Title</label>
+    <input id="noteTitle" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3 mb-4" placeholder="e.g. Chapter 6 — Photosynthesis" />
+    <label class="text-sm text-muted mb-2 block">Your notes</label>
+    <textarea id="noteText" rows="10" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3 font-body" placeholder="Paste your notes here… headings on their own line become topics you can quiz on separately."></textarea>
+    <div id="fileInline" class="mt-2 text-xs"></div>
+    <div class="flex items-center justify-between mt-4 gap-3">
+      <label class="btn-secondary rounded-xl border border-edge px-4 py-2.5 text-sm cursor-pointer">
+        <span id="uploadLabel">Upload .pdf / .docx / .pptx / .txt</span>
+        <input id="fileInput" type="file" accept=".txt,.pdf,.docx,.pptx" multiple class="hidden" />
+      </label>
+      <button id="continueBtn" class="btn-primary rounded-xl bg-accent text-bg font-semibold px-6 py-3">Continue →</button>
+    </div>
+    <div id="fileBox" class="mt-4 space-y-2"></div>
+    <p id="homeError" class="mt-3 text-sm text-bad" role="alert"></p>
+  </section>
+  ${history_teaser()}
+  <div class="mt-10 text-center fadein">
+    <button data-clear class="text-xs text-muted hover:text-bad">Clear data on this device</button>
+  </div>
+  `;
+}
+function history_teaser(){
+  if(!quizzes.length) return '';
+  return `<div class="mt-8 flex items-center justify-between fadein">
+    <p class="text-sm text-muted">${quizzes.length} saved quiz${quizzes.length>1?'zes':''}</p>
+    <button data-nav="history" class="text-accent text-sm font-medium hover:underline">View history →</button>
+  </div>`;
+}
+
+function viewConfigure(){
+  const note = notes.find(n => n.id === state.noteId);
+  const opts = note.sections.map(s => `<option value="${escapeAttr(s.heading)}">${escapeHtml(s.heading)}</option>`).join('');
+  return `
+  <header class="pt-10 pb-6 fadein">
+    <button data-nav="home" class="text-muted text-sm hover:text-ink">← Back</button>
+    <h1 class="font-display text-2xl font-semibold mt-3">Configure your quiz</h1>
+    <p class="text-muted text-sm mt-1">${escapeHtml(note.title)}</p>
+  </header>
+  <section class="card p-5 sm:p-6 border border-edge rounded-2xl bg-surface fadein space-y-5">
+    <div>
+      <label class="text-sm text-muted mb-2 block">Topic</label>
+      <select id="cfgTopic" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3">
+        <option value="">Whole document</option>${opts}
+      </select>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div>
+        <label class="text-sm text-muted mb-2 block">Difficulty</label>
+        <div class="flex gap-2" id="cfgDifficulty">
+          ${['easy','medium','hard'].map((d,i)=>`<button data-diff="${d}" class="diff-btn flex-1 rounded-xl border px-3 py-2.5 text-sm capitalize ${i===1?'border-accent text-accent bg-accent/10':'border-edge text-muted'}">${d}</button>`).join('')}
+        </div>
+      </div>
+      <div>
+        <label class="text-sm text-muted mb-2 block">Question count</label>
+        <input id="cfgCount" type="number" min="3" max="20" value="8" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3" />
+      </div>
+    </div>
+    <div>
+      <label class="text-sm text-muted mb-2 block">Question types</label>
+      <div class="flex flex-wrap gap-2" id="cfgTypes">
+        ${[['mcq','Multiple choice'],['true_false','True / False'],['short_answer','Short answer']].map(([v,l])=>`<button data-type="${v}" class="type-btn rounded-xl border border-accent text-accent bg-accent/10 px-3 py-2.5 text-sm">${l}</button>`).join('')}
+      </div>
+    </div>
+    <p id="cfgError" class="text-sm text-bad" role="alert"></p>
+    <button id="generateBtn" class="btn-primary w-full rounded-xl bg-accent text-bg font-semibold px-6 py-3.5 mt-2">Generate quiz</button>
+  </section>`;
+}
+
+function viewQuiz(){
+  const quiz = quizzes.find(q => q.id === state.quizId);
+  const q = quiz.questions[state.qIndex];
+  const progress = Math.round((state.qIndex) / quiz.questions.length * 100);
+  const given = state.answers[q.id] ?? '';
+  let answerUI = '';
+  if(q.type === 'short_answer'){
+    answerUI = `<input id="shortAnswer" class="field w-full rounded-xl border border-edge bg-surface2 px-4 py-3.5 text-lg" placeholder="Type your answer…" value="${escapeAttr(given)}" />`;
+  } else {
+    answerUI = q.options.map(o => `
+      <button data-opt="${escapeAttr(o)}" class="opt-btn w-full text-left rounded-xl border px-4 py-3.5 mb-2.5 transition-colors ${given===o ? 'border-accent bg-accent/10 text-accent' : 'border-edge bg-surface2 hover:border-accent/40'}">${escapeHtml(o)}</button>`).join('');
+  }
+  return `
+  <header class="pt-8 pb-4">
+    <div class="flex items-center justify-between text-sm text-muted mb-2">
+      <span>Question ${state.qIndex+1} of ${quiz.questions.length}</span>
+      <span class="uppercase tracking-wide text-xs">${q.type.replace('_',' ')}</span>
+    </div>
+    <div class="h-1 rounded-full bg-surface2 overflow-hidden"><div class="h-full bg-accent transition-all duration-500" style="width:${progress}%"></div></div>
+  </header>
+  <section class="qcard" key="${q.id}">
+    <h2 class="font-display text-xl sm:text-2xl font-medium leading-snug mt-4 mb-6">${escapeHtml(q.prompt)}</h2>
+    <div id="answerArea">${answerUI}</div>
+    <div class="flex items-center justify-between mt-8">
+      <button data-nav-quiz="prev" class="btn-secondary rounded-xl border border-edge px-5 py-3 text-sm ${state.qIndex===0?'opacity-40 pointer-events-none':''}">← Previous</button>
+      <button id="nextBtn" class="btn-primary rounded-xl bg-accent text-bg font-semibold px-6 py-3">${state.qIndex === quiz.questions.length-1 ? 'Finish & score' : 'Next →'}</button>
+    </div>
+  </section>`;
+}
+
+function viewResults(){
+  const quiz = quizzes.find(q => q.id === state.quizId);
+  const attempt = attempts.filter(a => a.quizId === quiz.id).slice(-1)[0];
+  const pct = attempt.score;
+  const circumference = 2 * Math.PI * 54;
+  const offset = circumference - (pct/100) * circumference;
+  return `
+  <header class="pt-10 pb-4 text-center fadein">
+    <p class="text-muted text-sm">${escapeHtml(quiz.title)}</p>
+    <div class="relative w-36 h-36 mx-auto mt-4">
+      <svg width="144" height="144" class="-rotate-90">
+        <circle cx="72" cy="72" r="54" style="stroke:rgb(var(--edge))" stroke-width="10" fill="none"/>
+        <circle cx="72" cy="72" r="54" style="stroke:rgb(var(--accent))" stroke-width="10" fill="none" stroke-linecap="round"
+          stroke-dasharray="${circumference}" stroke-dashoffset="${circumference}" class="ring" id="scoreRing"/>
+      </svg>
+      <div class="absolute inset-0 flex items-center justify-center font-display text-3xl font-semibold"><span data-count="${pct}" data-dec="${Number.isInteger(pct) ? 0 : 1}" data-suffix="%">0%</span></div>
+    </div>
+    <p class="text-muted text-sm mt-3">${attempt.answers.filter(a=>a.correct).length} of ${attempt.answers.length} correct</p>
+    ${attempt.earned ? `<div class="pop inline-flex items-center gap-2 mt-4 rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-accent font-display font-semibold">⚡ +${attempt.earned} points added to your bank</div>` : `<p class="text-xs text-muted mt-4">Each correct answer earns ${PTS_PER_CORRECT} points.</p>`}
+    <button data-nav="shop" class="block mx-auto mt-2 text-xs text-muted hover:text-ink">Bank: ${profile.points} pts · Visit the shop →</button>
+  </header>
+  <section class="mt-8 space-y-3">
+    ${attempt.answers.map((a, i) => `
+      <div data-anim="up" style="--i:${i % 6}" class="card p-4 rounded-xl border ${a.correct ? 'border-edge' : 'border-bad/40'} bg-surface">
+        <p class="text-sm ${a.correct?'text-good':'text-bad'} font-medium mb-1">${a.correct ? '✓ Correct' : '✕ Missed'}</p>
+        <p class="text-sm mb-1">${escapeHtml(a.prompt)}</p>
+        ${!a.correct ? `<p class="text-xs text-muted">You answered: <span class="text-ink">${escapeHtml(a.given||'—')}</span> · Correct: <span class="text-accent">${escapeHtml(a.answer)}</span></p>` : ''}
+        <p class="text-xs text-muted mt-1.5 italic">"${escapeHtml(a.source)}"</p>
+      </div>`).join('')}
+  </section>
+  <div class="flex gap-3 mt-8 fadein">
+    <button id="retakeBtn" class="btn-secondary flex-1 rounded-xl border border-edge px-5 py-3">Regenerate</button>
+    <button data-nav="home" class="btn-primary flex-1 rounded-xl bg-accent text-bg font-semibold px-5 py-3">New notes</button>
+  </div>
+  <button data-nav="history" class="w-full text-center text-sm text-muted mt-4 hover:text-ink">View all history & progress →</button>
+  `;
+}
+
+function viewHistory(){
+  const rows = quizzes.slice().reverse();
+  const points = attempts.map(a => a.score);
+  const chart = points.length > 1 ? sparkline(points) : '';
+  return `
+  <header class="pt-10 pb-6 fadein">
+    <button data-nav="home" class="text-muted text-sm hover:text-ink">← New notes</button>
+    <h1 class="font-display text-2xl font-semibold mt-3">History & progress</h1>
+  </header>
+  ${points.length ? `<div data-anim="scale" class="card p-5 rounded-2xl border border-edge bg-surface mb-6">
+      <p class="text-sm text-muted mb-3">Score over time (${points.length} attempt${points.length>1?'s':''})</p>
+      ${chart}
+    </div>` : ''}
+  <div class="space-y-3">
+    ${rows.length ? rows.map((q, i) => {
+      const qa = attempts.filter(a=>a.quizId===q.id);
+      const best = qa.length ? Math.max(...qa.map(a=>a.score)) : null;
+      return `<div data-anim="up" style="--i:${i % 6}" class="card p-4 rounded-xl border border-edge bg-surface flex items-center justify-between">
+        <div>
+          <p class="font-medium">${escapeHtml(q.title)}</p>
+          <p class="text-xs text-muted mt-0.5 capitalize">${q.difficulty} · ${q.questions.length} questions${q.topic?` · ${escapeHtml(q.topic)}`:''}</p>
+        </div>
+        <div class="text-right">
+          <p class="text-accent font-display font-semibold">${best!==null?best+'%':'—'}</p>
+          <button data-retake="${q.id}" class="text-xs text-muted hover:text-ink">Retake</button>
+        </div>
+      </div>`;
+    }).join('') : `<p class="text-muted text-sm">No quizzes yet — go generate one.</p>`}
+  </div>
+  <button data-clear class="w-full text-center text-xs text-muted hover:text-bad mt-8">Clear all saved data</button>`;
+}
+function sparkline(points){
+  const w=280,h=60,max=100,min=0;
+  const step = w/(points.length-1||1);
+  const pts = points.map((p,i)=>`${(i*step).toFixed(1)},${(h-(p-min)/(max-min)*h).toFixed(1)}`).join(' ');
+  return `<svg viewBox="0 0 ${w} ${h}" class="w-full h-16"><polyline points="${pts}" fill="none" style="stroke:rgb(var(--accent))" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function escapeAttr(s){ return escapeHtml(s).replace(/`/g,'&#96;'); }
+
+/* ---------- render + events ---------- */
+function render(){
+  const views = { home:viewHome, configure:viewConfigure, quiz:viewQuiz, results:viewResults, history:viewHistory, shop:viewShop, board:viewBoard, landing:viewLanding, account:viewAccount };
+  const key = animKey(), fresh = key !== renderedKey; renderedKey = key;
+  stopAnims(); applyTheme();
+  root.className = (state.view === 'landing' ? 'max-w-5xl' : 'max-w-2xl') + ' mx-auto px-5 pb-16';
+  root.innerHTML = (state.view === 'quiz' ? '' : topBar() + (state.flash ? `<div class="mt-4 rounded-xl border border-accent/40 bg-accent/10 px-4 py-3 text-sm" role="status">${escapeHtml(state.flash)}</div>` : '')) + views[state.view]();
+  bindEvents();
+  setupAnims(fresh);
+  if(state.view === 'landing') startDemo();
+}
+async function busy(btn, label, fn){
+  const t = btn.textContent; btn.disabled = true; btn.textContent = label;
+  try{ return await fn(); } finally{ if(btn.isConnected){ btn.disabled = false; btn.textContent = t; } }
+}
+function bindEvents(){
+  root.querySelectorAll('[data-nav]').forEach(b => b.onclick = () => go(b.dataset.nav));
+  root.querySelectorAll('[data-start]').forEach(b => b.onclick = () => go(profile.account ? 'home' : 'account', { acctTab:'create', next:'home' }));
+  root.querySelectorAll('[data-scroll]').forEach(b => b.onclick = () => {
+    const t = document.getElementById(b.dataset.scroll);
+    if(t && t.scrollIntoView) t.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+  root.querySelectorAll('[data-clear]').forEach(b => b.onclick = () => {
+    if(b.dataset.armed !== '1'){
+      b.dataset.armed = '1'; b.textContent = 'Tap again to clear everything on this device';
+      b.classList.add('text-bad');
+      setTimeout(() => { if(b.isConnected){ b.dataset.armed = ''; b.textContent = 'Clear data on this device'; b.classList.remove('text-bad'); } }, 4000);
+      return;
+    }
+    notes = []; quizzes = []; attempts = []; pendingFiles = []; resetProfile();
+    ['ntq_notes','ntq_quizzes','ntq_attempts','ntq_profile'].forEach(k => localStorage.removeItem(k));
+    go('landing', { flash: 'This device was cleared. Your account, if you have one, is still saved.' });
+  });
+
+  if(state.view === 'home'){
+    renderFileStatus();
+    $('#continueBtn').onclick = () => {
+      const typed = $('#noteText').value.trim();
+      const combined = [typed, ...pendingFiles.map(f => f.text.trim())].filter(Boolean).join('\n\n');
+      if(!combined){ $('#homeError').textContent = 'Add some notes first — paste text or upload a file.'; $('#noteText').focus(); return; }
+      const title = $('#noteTitle').value.trim() || (pendingFiles[0] ? pendingFiles[0].name.replace(/\.[^.]+$/,'') : 'Untitled notes');
+      const note = { id: uid(), title, content: combined, sections: splitSections(combined) };
+      notes.push(note); save(); pendingFiles = [];
+      go('configure', { noteId: note.id });
+    };
+    $('#fileInput').onchange = async (e) => {
+      const files = [...e.target.files]; if(!files.length) return;
+      const label = $('#uploadLabel'); const original = label.textContent;
+      const err = $('#homeError'); err.textContent = '';
+      label.textContent = 'Reading file…';
+      for(const f of files){
+        try{
+          const text = await extractFileText(f);
+          if(!text.trim()){ err.textContent = `We couldn't find readable text in "${f.name}" — try pasting it instead.`; continue; }
+          pendingFiles.push({ name: f.name, text });
+          if(!$('#noteTitle').value.trim()) $('#noteTitle').value = f.name.replace(/\.[^.]+$/,'');
+        } catch(ex){
+          console.error(ex);
+          err.textContent = `Couldn't read "${f.name}". Use a .txt, .pdf, .docx or .pptx file — or paste your notes.`;
+        }
+      }
+      renderFileStatus();
+      label.textContent = original;
+      e.target.value = '';
+    };
+  }
+
+  if(state.view === 'configure'){
+    let difficulty = 'medium';
+    let types = new Set(['mcq','true_false','short_answer']);
+    root.querySelectorAll('.diff-btn').forEach(b => b.onclick = () => {
+      difficulty = b.dataset.diff;
+      root.querySelectorAll('.diff-btn').forEach(x => x.className = 'diff-btn flex-1 rounded-xl border px-3 py-2.5 text-sm capitalize border-edge text-muted');
+      b.className = 'diff-btn flex-1 rounded-xl border px-3 py-2.5 text-sm capitalize border-accent text-accent bg-accent/10';
+    });
+    root.querySelectorAll('.type-btn').forEach(b => b.onclick = () => {
+      const t = b.dataset.type;
+      if(types.has(t) && types.size > 1){ types.delete(t); b.className = 'type-btn rounded-xl border border-edge text-muted px-3 py-2.5 text-sm'; }
+      else if(!types.has(t)){ types.add(t); b.className = 'type-btn rounded-xl border border-accent text-accent bg-accent/10 px-3 py-2.5 text-sm'; }
+    });
+    $('#generateBtn').onclick = () => {
+      const note = notes.find(n => n.id === state.noteId);
+      const topic = $('#cfgTopic').value;
+      const count = Math.max(3, Math.min(20, parseInt($('#cfgCount').value) || 8));
+      const source = topic ? note.sections.filter(s=>s.heading===topic).map(s=>s.text).join('\n') : note.content;
+      const questions = generateQuestions(source, difficulty, count, [...types]);
+      if(!questions.length){ $('#cfgError').textContent = 'Could not generate questions from that text — try adding more detailed notes.'; return; }
+      const quiz = { id: uid(), noteId: note.id, title: note.title, topic, difficulty, questions, createdAt: Date.now() };
+      quizzes.push(quiz); save();
+      go('quiz', { quizId: quiz.id, qIndex: 0, answers: {} });
+    };
+  }
+
+  if(state.view === 'quiz'){
+    const quiz = quizzes.find(q => q.id === state.quizId);
+    const q = quiz.questions[state.qIndex];
+    root.querySelectorAll('.opt-btn').forEach(b => b.onclick = () => { state.answers[q.id] = b.dataset.opt; render(); });
+    root.querySelector('[data-nav-quiz="prev"]').onclick = () => go('quiz', { qIndex: Math.max(0, state.qIndex-1) });
+    $('#nextBtn').onclick = () => {
+      if(q.type === 'short_answer') state.answers[q.id] = $('#shortAnswer').value.trim();
+      if(state.qIndex === quiz.questions.length - 1){
+        const answers = quiz.questions.map(qq => {
+          const given = state.answers[qq.id] || '';
+          return { question_id: qq.id, prompt: qq.prompt, given, answer: qq.answer, source: qq.source, correct: isCorrect(qq.type, given, qq.answer) };
+        });
+        const total = answers.length;
+        const correctCount = answers.filter(a=>a.correct).length;
+        const score = Math.round((correctCount / total) * 1000) / 10;
+        const earned = correctCount * PTS_PER_CORRECT;
+        profile.points += earned; profile.lifetime += earned;
+        attempts.push({ id: uid(), quizId: quiz.id, score, earned, answers, createdAt: Date.now() }); save(); syncBoard();
+        go('results');
+        requestAnimationFrame(() => {
+          const ring = $('#scoreRing'); if(!ring) return;
+          const c = 2*Math.PI*54; ring.style.strokeDashoffset = c - (score/100)*c;
+        });
+      } else {
+        go('quiz', { qIndex: state.qIndex + 1 });
+      }
+    };
+  }
+
+  if(state.view === 'results'){
+    $('#retakeBtn').onclick = () => {
+      const quiz = quizzes.find(q => q.id === state.quizId);
+      const note = notes.find(n => n.id === quiz.noteId);
+      const source = quiz.topic ? note.sections.filter(s=>s.heading===quiz.topic).map(s=>s.text).join('\n') : note.content;
+      const questions = generateQuestions(source, quiz.difficulty, quiz.questions.length, [...new Set(quiz.questions.map(q=>q.type))]);
+      const newQuiz = { ...quiz, id: uid(), questions, createdAt: Date.now() };
+      quizzes.push(newQuiz); save();
+      go('quiz', { quizId: newQuiz.id, qIndex: 0, answers: {} });
+    };
+  }
+
+  if(state.view === 'shop'){
+    root.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { state.shopTab = b.dataset.tab; state.shopMsg = ''; state.sellArm = ''; render(); });
+    root.querySelectorAll('[data-buy]').forEach(b => b.onclick = () => {
+      const it = getItem(b.dataset.buy), price = TIERS[it.tier].price;
+      if(profile.owned.includes(it.id) || profile.points < price) return;
+      profile.points -= price; profile.owned.push(it.id); profile.equipped[it.cat] = it.id; save();
+      state.shopMsg = `Bought ${it.name} (${TIERS[it.tier].name}) — equipped!`; state.sellArm = ''; syncBoard(); render();
+    });
+    root.querySelectorAll('[data-equip]').forEach(b => b.onclick = () => {
+      const it = getItem(b.dataset.equip); if(!profile.owned.includes(it.id)) return;
+      profile.equipped[it.cat] = it.id; save(); state.shopMsg = `Equipped ${it.name}`; state.sellArm = ''; syncBoard(); render();
+    });
+    const un = root.querySelector('[data-unequip]');
+    if(un) un.onclick = () => { profile.equipped.costume = null; save(); state.shopMsg = 'Costume removed'; state.sellArm = ''; syncBoard(); render(); };
+    root.querySelectorAll('[data-sell]').forEach(b => b.onclick = () => {
+      const it = getItem(b.dataset.sell);
+      if(!it || it.tier === 'starter' || !profile.owned.includes(it.id)) return;
+      if(state.sellArm !== it.id){ state.sellArm = it.id; render(); return; }   // first tap arms, second confirms
+      const val = sellValue(it);
+      profile.owned = profile.owned.filter(x => x !== it.id);
+      if(profile.equipped[it.cat] === it.id) profile.equipped[it.cat] = it.cat === 'theme' ? 'theme_default' : it.cat === 'color' ? 'color_default' : null;
+      profile.points += val; save();
+      state.sellArm = ''; state.shopMsg = `Sold ${it.name} for ${val} pts`; syncBoard(); render();
+    });
+  }
+
+  if(state.view === 'account'){
+    root.querySelectorAll('[data-atab]').forEach(b => b.onclick = () => { state.acctTab = b.dataset.atab; state.acctMsg = ''; state.delOpen = false; state.signoutArm = false; state.backupCode = ''; render(); });
+    root.querySelectorAll('[data-showpw]').forEach(b => b.onclick = () => {
+      const i = document.getElementById(b.dataset.showpw), show = i.type === 'password';
+      i.type = show ? 'text' : 'password'; b.textContent = show ? 'Hide' : 'Show';
+    });
+    const pwn = $('#pwNew');
+    if(pwn) pwn.oninput = () => {
+      const s = strengthOf(pwn.value), bar = $('#pwBar'), lab = $('#pwLabel');
+      bar.style.width = ['0%','33%','66%','100%'][s]; bar.style.background = ['transparent','#FB7185','#FACC15','#4ADE80'][s];
+      lab.textContent = ['Use 8 or more characters. Longer is stronger.','Weak: add length, numbers or symbols.','Okay: a little longer would be better.','Strong password.'][s];
+    };
+    const after = msg => state.next ? go(state.next) : go('account', { acctTab: 'manage', acctMsg: msg });
+
+    const lb = $('#loginBtn');
+    if(lb) lb.onclick = () => busy(lb, 'Logging in…', async () => {
+      const err = $('#loginErr'); err.textContent = '';
+      const u = cleanNick($('#loginUser').value), pw = $('#loginPw').value;
+      if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+      if(!u || !pw){ err.textContent = 'Enter your username and password.'; return; }
+      let r; try{ r = await loginAccount(u, pw); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      after(`Logged in as ${profile.account.nick}.`);
+    });
+    const cb = $('#createBtn');
+    if(cb) cb.onclick = () => busy(cb, 'Securing…', async () => {
+      const err = $('#createErr'); err.textContent = '';
+      if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+      const u = cleanNick($('#newUser').value), p1 = $('#pwNew').value, p2 = $('#pwConfirm').value;
+      const bad = usernameError(u) || passwordError(p1, u) || (p1 !== p2 ? 'The two passwords do not match.' : '');
+      if(bad){ err.textContent = bad; return; }
+      let r; try{ r = await createPasswordAccount(u, p1); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      after('Your account is ready.');
+    });
+    const chb = $('#changeBtn');
+    if(chb) chb.onclick = () => busy(chb, 'Securing…', async () => {
+      const err = $('#pwErr'); err.textContent = '';
+      const o = $('#pwOld').value, p1 = $('#pwNew').value, p2 = $('#pwConfirm').value;
+      if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+      const bad = !o ? 'Enter your current password.' : passwordError(p1, profile.account.nick) || (p1 !== p2 ? 'The two new passwords do not match.' : '');
+      if(bad){ err.textContent = bad; return; }
+      let r; try{ r = await changePassword(o, p1); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      go('account', { acctTab: 'manage', acctMsg: 'Password changed.' });
+    });
+    const bki = $('#bkInBtn');
+    if(bki) bki.onclick = () => busy(bki, 'Checking…', async () => {
+      state.bkOpen = true;
+      const err = $('#bkErr'); err.textContent = '';
+      if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+      const code = $('#bkIn').value, pw = $('#bkInPw').value;
+      if(!code.trim() || !pw){ err.textContent = 'Paste the backup code and enter the account password.'; return; }
+      let r; try{ r = await importBackup(code, pw); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      after(`Logged in as ${profile.account.nick}.`);
+    });
+    const bkm = $('#bkMakeBtn');
+    if(bkm) bkm.onclick = () => busy(bkm, 'Securing…', async () => {
+      const err = $('#bkMakeErr'); err.textContent = '';
+      const pw = $('#bkPw').value;
+      if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+      if(!pw){ err.textContent = 'Enter your password to make a backup code.'; return; }
+      let r; try{ r = await makeBackup(pw); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      state.backupCode = r.code; state.acctMsg = ''; refreshAccount();
+    });
+    const bkc = $('#bkCopyBtn');
+    if(bkc) bkc.onclick = async () => {
+      const msg = $('#bkCopyMsg'), ta = $('#bkOut');
+      try{ await navigator.clipboard.writeText(ta.value); msg.textContent = 'Copied. Paste it on your other device.'; }
+      catch(e){ ta.focus(); ta.select(); msg.textContent = 'Press Ctrl+C (or Cmd+C) to copy the selected code.'; }
+    };
+    const gb = $('#guestBtn');
+    if(gb) gb.onclick = () => {
+      const typed = cleanNick($('#newUser') ? $('#newUser').value : '');
+      profile.account = { nick: nickError(typed) ? 'Guest' : typed, mode: 'guest', createdAt: Date.now() }; save();
+      state.next ? go(state.next) : go('account', { acctTab: 'manage', acctMsg: 'You are playing as a guest.' });
+    };
+    const rs = $('#restoreBtn');
+    if(rs) rs.onclick = () => {
+      const remote = cloudProfile;
+      if(remoteIsAhead(remote)) adoptProfile(remote);
+      profile.account = { nick: String(remote.nick).slice(0, 20), mode: 'cloud', createdAt: remote.createdAt || Date.now() };
+      lastCloudSig = ''; save(); syncBoard(); after('Welcome back!');
+    };
+    const rn = $('#renameBtn');
+    if(rn) rn.onclick = () => {
+      const nick = cleanNick($('#renameInput').value), bad = nickError(nick);
+      if(bad){ $('#renameErr').textContent = bad; return; }
+      profile.account.nick = nick; save(); syncBoard(); go('account', { acctTab: 'manage', acctMsg: 'Name updated.' });
+    };
+    const so = $('#signoutBtn');
+    if(so && !so.disabled) so.onclick = async () => {
+      if(!state.signoutArm){ state.signoutArm = true; render(); return; }
+      await flushSync(); resetProfile(); go('landing', { flash: 'You are signed out.' });
+    };
+    const dob = $('#delOpenBtn'); if(dob) dob.onclick = () => { state.delOpen = true; render(); };
+    const dc = $('#delCancelBtn'); if(dc) dc.onclick = () => { state.delOpen = false; render(); };
+    const dg = $('#delGoBtn');
+    if(dg) dg.onclick = () => busy(dg, 'Deleting…', async () => {
+      const err = $('#delErr'); err.textContent = '';
+      const a = profile.account, pw = $('#delPw') ? $('#delPw').value : '';
+      if(a && a.mode === 'password'){
+        if(!hasCrypto()){ err.textContent = NO_CRYPTO; return; }
+        if(!pw){ err.textContent = 'Enter your password to confirm.'; return; }
+      }
+      let r; try{ r = await deleteAccount(pw, $('#delNotes').checked); } catch(e){ r = { error: OFFLINE_MSG }; }
+      if(r.error){ err.textContent = r.error; return; }
+      go('landing', { flash: a ? 'Your account was deleted.' : 'Data on this device was deleted.' });
+    });
+  }
+
+  if(state.view === 'board'){
+    root.querySelectorAll('[data-btab]').forEach(b => b.onclick = () => { state.boardTab = b.dataset.btab; render(); });
+  }
+
+  if(state.view === 'history'){
+    root.querySelectorAll('[data-retake]').forEach(b => b.onclick = () => {
+      go('quiz', { quizId: b.dataset.retake, qIndex: 0, answers: {} });
+    });
+  }
+}
+
+render();
+initBoard();
+</script>
+</body>
+</html>
